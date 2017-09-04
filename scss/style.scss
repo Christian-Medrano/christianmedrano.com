@@ -1,11 +1,10 @@
-// CSS Reset
 @import "_reset.scss";
-
-// Prefixer
 @import "../node_modules/sass-autoprefixer/scss/prefixes.scss";
-
-// Variables
 @import "variables.scss";
-
-// Typography
+@import "utilities.scss";
 @import "typography.scss";
+@import "layout.scss";
+@import "hud.scss";
+@import "scene.scss";
+@import "welcome.scss";
+@import "animations.scss";

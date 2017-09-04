@@ -1,0 +1,16 @@
+#welcome {
+	background-color: #fff;
+}
+
+#welcome-message {
+	font-family: $font-serif;
+	font-size: 7em;
+	font-weight: bold;
+	color: #aaa;
+	text-align: center;
+}
+
+#welcome-message p {
+	animation-name: fadeUp;
+	animation-duration: 1s;
+}

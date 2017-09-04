@@ -1,0 +1,46 @@
+#hud {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hud-item {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin: 30px;
+	position: absolute;
+}
+.hud-item:nth-child(2){
+	right: 0;
+	flex-direction: row-reverse;
+}
+.hud-item:nth-child(3){
+	left: 0;
+	bottom: 0;
+}
+.hud-item:nth-child(4){
+	right: 0;
+	bottom: 0;
+	flex-direction: row-reverse;
+}
+
+.hud-icon {
+	height: 40px;
+	width: 40px;
+}
+
+.icon-color {
+	fill: #fff;
+}
+
+.hud-caption {
+	color: white;
+	font-family: $font-monospace;
+	font-size: 20px;
+	opacity: 0;
+	transform: translateX(-100%);
+	transition-duration: 1s;
+}
+.hud-caption-container {
+	overflow: hidden;
+	margin: 0 10px;
+}
