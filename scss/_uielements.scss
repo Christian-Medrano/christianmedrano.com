@@ -3,6 +3,26 @@
     background: $color-brand;
 }
 
+::-webkit-scrollbar {
+	width: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+.btn-close {
+	height: 16px;
+	width: 16px;
+	opacity: 0.5;
+	transition-duration: 0.3s;
+}
+.btn-close:hover {
+	opacity: 1;
+	transition-duration: 0.3s;
+}
+
 body {
 	cursor: url('../img/icons/cursor-default.svg'), default;
 }

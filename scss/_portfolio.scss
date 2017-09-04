@@ -1,0 +1,51 @@
+#portfolio {
+	position: absolute;
+	display: block;
+	display: none;
+	height: 75%;
+	width: 50%;
+}
+#projects {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	min-height: calc(100% - 60px);
+	min-height: calc(100% - 60px);
+	max-height: calc(100% - 60px);
+	max-height: calc(100% - 60px);
+	overflow: auto;
+}
+.project {
+	position: relative;
+	width: 33%;
+	height: 200px;
+	background-color: #777;
+	border: 1px solid #000;
+}
+.cover {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+.cover img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+$project-info-padding: 20px;
+.project-info {
+	position: absolute;
+	padding: $project-info-padding;
+	height: calc(100% - 40px);
+	width: calc(100% - 40px);
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	opacity: 0;
+	transition-duration: 0.3s;
+}
+.project-info:hover {
+	opacity: 1;
+	transition-duration: 0.3s;
+}

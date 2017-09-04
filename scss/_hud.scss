@@ -39,7 +39,7 @@
 
 .hud-caption {
 	color: white;
-	font-family: $font-monospace;
+	font-family: $font-sans-serif;
 	font-size: 20px;
 	opacity: 0;
 	transform: translateX(-100%);
@@ -51,4 +51,17 @@
 }
 .hud-caption-container {
 	overflow: hidden;
+}
+
+#letter {
+	position: relative;
+	transition-duration: $icon-speed;
+}
+#arrow {
+	position: relative;
+	transition-duration: $icon-speed;
+}
+#iris {
+	position: relative;
+	transition-duration: $icon-speed;
 }

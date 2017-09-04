@@ -3,6 +3,7 @@
 include 'header.php'; 
 include 'welcome.php';
 include 'hud.php';
+include 'portfolio.php';
 
 ?>
 <!-- scene overlay -->

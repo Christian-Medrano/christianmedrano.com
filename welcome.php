@@ -1,6 +1,6 @@
 <div id="welcome" class="fullscreen">
 	<div id="welcome-message" class="center">
-		<p><em>
+		<h1><em>
 		<?php 
 			$tod = date('G');
 
@@ -12,6 +12,6 @@
 				echo 'Good Evening';
 			}
 		 ?>
-		</em></p>
+		</em></h1>
 	</div>
 </div>

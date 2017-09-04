@@ -59,6 +59,24 @@ table {
   color: white;
   background: red; }
 
+::-webkit-scrollbar {
+  width: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15); }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #fff; }
+
+.btn-close {
+  height: 16px;
+  width: 16px;
+  opacity: 0.5;
+  transition-duration: 0.3s; }
+
+.btn-close:hover {
+  opacity: 1;
+  transition-duration: 0.3s; }
+
 body {
   cursor: url("../img/icons/cursor-default.svg"), default; }
 
@@ -76,6 +94,42 @@ body {
   top: 50vh;
   left: 50vw;
   transform: translate(-50%, -50%); }
+
+h2 {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px; }
+
+h3 {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px; }
+
+h4 {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px; }
+
+p {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff; }
+
+.modal {
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 30px; }
+
+.modal-bar {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#hud {
+  z-index: -2; }
 
 #welcome {
   z-index: -3; }
@@ -120,7 +174,7 @@ body {
 
 .hud-caption {
   color: white;
-  font-family: "Lucida Console", Monaco, monospace;
+  font-family: Helvetica, sans-serif;
   font-size: 20px;
   opacity: 0;
   transform: translateX(-100%);
@@ -133,17 +187,33 @@ body {
 .hud-caption-container {
   overflow: hidden; }
 
+#letter {
+  position: relative;
+  transition-duration: 0.3s; }
+
+#arrow {
+  position: relative;
+  transition-duration: 0.3s; }
+
+#iris {
+  position: relative;
+  transition-duration: 0.3s; }
+
+.layer img {
+  object-fit: cover; }
+
 #welcome {
   background-color: #000; }
 
 #welcome-message {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  font-size: 7em;
-  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  font-size: 5em;
+  font-weight: light;
   color: #fff;
   text-align: center; }
 
-#welcome-message p {
+#welcome-message h1 {
+  font-size: 1em;
   animation-name: fadeUp;
   animation-duration: 1s; }
 
@@ -180,3 +250,53 @@ body {
   animation-name: fadeLeft;
   animation-duration: 1s;
   opacity: 1; }
+
+#portfolio {
+  position: absolute;
+  display: block;
+  display: none;
+  height: 75%;
+  width: 50%; }
+
+#projects {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: calc(100% - 60px);
+  min-height: calc(100% - 60px);
+  max-height: calc(100% - 60px);
+  max-height: calc(100% - 60px);
+  overflow: auto; }
+
+.project {
+  position: relative;
+  width: 33%;
+  height: 200px;
+  background-color: #777;
+  border: 1px solid #000; }
+
+.cover {
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
+
+.cover img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.project-info {
+  position: absolute;
+  padding: 20px;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition-duration: 0.3s; }
+
+.project-info:hover {
+  opacity: 1;
+  transition-duration: 0.3s; }

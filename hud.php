@@ -13,7 +13,7 @@
 	<!-- Upper Right -->
 	<div id="hud-item-2" class="hud-item" >
 		<div class="hud-icon">
-			<?php include 'img/icons/placeholder.php'; ?>
+			<?php include 'img/icons/eyeball.php'; ?>
 		</div>
 		<div class="hud-caption-container">
 			<h5 class="hud-caption hud-caption-right">View my work</h5>
@@ -23,7 +23,7 @@
 	<a href="doc/ChristianMedrano-Resume-Aug2107" download>
 	<div id="hud-item-3" class="hud-item" >
 		<div class="hud-icon">
-			<?php include 'img/icons/placeholder.php'; ?>
+			<?php include 'img/icons/download.php'; ?>
 		</div>
 		<div class="hud-caption-container">
 			<h5 class="hud-caption">Download my Resume</h5>
@@ -33,7 +33,7 @@
 	<!-- Lower Right -->
 	<div id="hud-item-4" class="hud-item" >
 		<div class="hud-icon">
-			<?php include 'img/icons/placeholder.php'; ?>
+			<?php include 'img/icons/contact.php'; ?>
 		</div>
 		<div class="hud-caption-container">
 			<h5 class="hud-caption hud-caption-right">Contact Me</h5>
