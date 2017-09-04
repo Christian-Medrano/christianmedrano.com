@@ -59,13 +59,17 @@ table {
   color: white;
   background: red; }
 
+::-webkite-scrollbar-track {
+  border-radius: 10px; }
+
 ::-webkit-scrollbar {
   width: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.15); }
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px; }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #fff; }
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px; }
 
 .btn-close {
   height: 16px;
@@ -258,16 +262,18 @@ p {
   height: 75%;
   width: 50%; }
 
-#projects {
+#projects-container {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   min-height: calc(100% - 60px);
   min-height: calc(100% - 60px);
   max-height: calc(100% - 60px);
   max-height: calc(100% - 60px);
   overflow: auto; }
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
 
 .project {
   position: relative;
@@ -300,3 +306,12 @@ p {
 .project-info:hover {
   opacity: 1;
   transition-duration: 0.3s; }
+
+#behance-badge {
+  position: relative;
+  width: 100%;
+  height: 115px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center; }
