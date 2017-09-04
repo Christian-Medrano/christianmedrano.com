@@ -8,20 +8,20 @@
 		$('.hud-caption').hide();
 		$('.hud-item').css({opacity: '0'});
 		$('#hud-item-1').css({
-			top: '50vh',
-			left: '50vw'
+			top: 'calc(50vh - 120px)',
+			left: 'calc(50vw - 120px)',
 		});
 		$('#hud-item-2').css({
-			top: '50vh',
-			right: '50vw'
+			top: 'calc(50vh - 120px)',
+			right: 'calc(50vw - 120px)'
 		});
 		$('#hud-item-3').css({
-			bottom: '50vh',
-			left: '50vw'
+			bottom: 'calc(50vh - 120px)',
+			left: 'calc(50vw - 120px)'
 		});
 		$('#hud-item-4').css({
-			bottom: '50vh',
-			right: '50vw'
+			bottom: 'calc(50vh - 120px)',
+			right: 'calc(50vw - 120px)'
 		});
 		// fade out welcome, fade in icons
 		$('#welcome-message').delay(2000).fadeOut(500, function(){

@@ -116,7 +116,7 @@ body {
   width: 40px; }
 
 .icon-color {
-  fill: red; }
+  fill: #fff; }
 
 .hud-caption {
   color: white;
@@ -134,13 +134,13 @@ body {
   overflow: hidden; }
 
 #welcome {
-  background-color: #fff; }
+  background-color: #000; }
 
 #welcome-message {
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 7em;
   font-weight: bold;
-  color: #aaa;
+  color: #fff;
   text-align: center; }
 
 #welcome-message p {
