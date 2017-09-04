@@ -1,7 +1,9 @@
 #welcome {
-	z-index: 100;
+	z-index: -3;
 }
-
+.scene-overlay{
+	z-index: -4;
+}
 #scene-container {
 	z-index: -5;
 }

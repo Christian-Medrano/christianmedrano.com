@@ -1,6 +1,6 @@
 <div id="hud" class="fullscreen">
 	<!-- Upper Left -->
-	<div class="hud-item" >
+	<div id="hud-item-1" class="hud-item" >
 		<div class="hud-icon">
 			<?php include 'img/icons/placeholder.php'; ?>
 		</div>
@@ -9,16 +9,16 @@
 		</div>
 	</div>
 	<!-- Upper Right -->
-	<div class="hud-item" >
+	<div id="hud-item-2" class="hud-item" >
 		<div class="hud-icon">
 			<?php include 'img/icons/placeholder.php'; ?>
 		</div>
 		<div class="hud-caption-container">
-			<h5 class="hud-caption">View my work</h5>
+			<h5 class="hud-caption hud-caption-right">View my work</h5>
 		</div>
 	</div>
 	<!-- Lower Left -->
-	<div class="hud-item" >
+	<div id="hud-item-3" class="hud-item" >
 		<div class="hud-icon">
 			<?php include 'img/icons/placeholder.php'; ?>
 		</div>
@@ -27,12 +27,12 @@
 		</div>
 	</div>
 	<!-- Lower Right -->
-	<div class="hud-item" >
+	<div id="hud-item-4" class="hud-item" >
 		<div class="hud-icon">
 			<?php include 'img/icons/placeholder.php'; ?>
 		</div>
 		<div class="hud-caption-container">
-			<h5 class="hud-caption">Contact Me</h5>
+			<h5 class="hud-caption hud-caption-right">Contact Me</h5>
 		</div>
 	</div>
 

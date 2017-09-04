@@ -55,6 +55,13 @@ table {
  *
  * @see https://www.sitepoint.com/building-linear-gradient-mixin-sass/
  */
+::selection {
+  color: white;
+  background: red; }
+
+body {
+  cursor: url("../img/icons/cursor-default.svg"), default; }
+
 .fullscreen {
   min-width: 100vw;
   min-height: 100vh;
@@ -71,20 +78,25 @@ table {
   transform: translate(-50%, -50%); }
 
 #welcome {
-  z-index: 100; }
+  z-index: -3; }
+
+.scene-overlay {
+  z-index: -4; }
 
 #scene-container {
   z-index: -5; }
-
-#hud {
-  background-color: rgba(0, 0, 0, 0.5); }
 
 .hud-item {
   display: flex;
   align-items: center;
   padding: 10px;
   margin: 30px;
-  position: absolute; }
+  position: absolute;
+  transition-duration: 0.5s; }
+
+.hud-item:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transition-duration: 0.5s; }
 
 .hud-item:nth-child(2) {
   right: 0;
@@ -104,7 +116,7 @@ table {
   width: 40px; }
 
 .icon-color {
-  fill: #fff; }
+  fill: red; }
 
 .hud-caption {
   color: white;
@@ -114,9 +126,12 @@ table {
   transform: translateX(-100%);
   transition-duration: 1s; }
 
+.hud-caption-right {
+  transform: translateX(100%);
+  transition-duration: 1s; }
+
 .hud-caption-container {
-  overflow: hidden;
-  margin: 0 10px; }
+  overflow: hidden; }
 
 #welcome {
   background-color: #fff; }

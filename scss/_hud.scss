@@ -1,5 +1,5 @@
 #hud {
-	background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .hud-item {
@@ -8,6 +8,11 @@
 	padding: 10px;
 	margin: 30px;
 	position: absolute;
+	transition-duration: 0.5s;
+}
+.hud-item:hover{
+	background-color: rgba(255, 255, 255, 0.15);
+	transition-duration: 0.5s;
 }
 .hud-item:nth-child(2){
 	right: 0;
@@ -29,7 +34,7 @@
 }
 
 .icon-color {
-	fill: #fff;
+	fill: $color-brand;
 }
 
 .hud-caption {
@@ -40,7 +45,10 @@
 	transform: translateX(-100%);
 	transition-duration: 1s;
 }
+.hud-caption-right {
+	transform: translateX(100%);
+	transition-duration: 1s;
+}
 .hud-caption-container {
 	overflow: hidden;
-	margin: 0 10px;
 }

@@ -5,7 +5,8 @@ include 'welcome.php';
 include 'hud.php';
 
 ?>
-
+<!-- scene overlay -->
+<div class="scene-overlay fullscreen" style="background-color: rgba(0, 0, 0, 0.5);"></div>
 <!-- Parallax Scene -->
 <div id="scene-container" class="fullscreen">
 	<div id="scene" class="scene">
