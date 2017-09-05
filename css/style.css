@@ -82,7 +82,8 @@ table {
   transition-duration: 0.3s; }
 
 body {
-  cursor: url("../img/icons/cursor-default.svg"), default; }
+  cursor: url("../img/icons/cursor-default.svg"), default;
+  cursor: url("../img/icons/cursor-default.svg"), auto; }
 
 .fullscreen {
   min-width: 100vw;
@@ -134,42 +135,51 @@ body {
   font-weight: 700;
   src: url("fonts/PangramSans/Pangram-Black.otf"); }
 
+h1 {
+  color: white;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 5em;
+  text-transform: uppercase;
+  margin-bottom: 0.1em; }
+
 h2 {
   color: white;
   font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-weight: 200;
-  font-size: 20px; }
+  font-weight: 100;
+  font-size: 4em; }
 
 h3 {
   color: white;
   font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-weight: 200;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 1em;
   margin-bottom: 10px; }
 
 h4 {
   color: white;
   font-family: "Pangram Sans", Helvetica, sans-serif;
   font-weight: 200;
-  font-size: 16px; }
+  font-size: 1em; }
 
 h5 {
   color: white;
   font-family: "Pangram Sans", Helvetica, sans-serif;
   font-weight: 200;
-  font-size: 20px; }
+  font-size: 1em; }
+
+h6 {
+  color: white;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1em; }
 
 p {
   font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: #fff; }
-
-.modal {
-  z-index: -1;
-  background-color: rgba(0, 0, 0, 0.75);
-  padding: 30px; }
+  font-size: 1em;
+  font-weight: 200;
+  color: #fff;
+  line-height: 1.5em; }
 
 .modal-bar {
   padding-bottom: 30px;
@@ -177,17 +187,29 @@ p {
   justify-content: space-between;
   align-items: center; }
 
+.modal {
+  z-index: 6;
+  padding: 30px; }
+
+#modal-dimmer {
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none; }
+
 #hud {
-  z-index: -2; }
+  z-index: 4; }
+
+#blurb {
+  z-index: 3; }
 
 #welcome {
-  z-index: -3; }
+  z-index: 2; }
 
 .scene-overlay {
-  z-index: -4; }
+  z-index: 1; }
 
 #scene-container {
-  z-index: -5; }
+  z-index: 0; }
 
 .hud-item {
   display: flex;
@@ -200,6 +222,10 @@ p {
 .hud-item:hover {
   background-color: rgba(255, 255, 255, 0.15);
   transition-duration: 0.5s; }
+
+#hud-item-1 {
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px); }
 
 .hud-item:nth-child(2) {
   right: 0;
@@ -215,8 +241,11 @@ p {
   flex-direction: row-reverse; }
 
 .hud-icon {
-  height: 40px;
-  width: 40px; }
+  height: 50px;
+  width: 50px; }
+
+#hud-icon-1, #hud-icon-2, #hud-icon-3, #hud-icon-4 {
+  display: none; }
 
 .icon-color {
   fill: #fff; }
@@ -224,7 +253,6 @@ p {
 .hud-caption {
   color: white;
   font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-size: 20px;
   opacity: 0;
   transform: translateX(-100%);
   transition-duration: 1s; }
@@ -248,21 +276,13 @@ p {
   position: relative;
   transition-duration: 0.3s; }
 
-.layer img {
-  object-fit: cover; }
-
 #welcome {
   background-color: #000; }
 
 #welcome-message {
-  font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-size: 5em;
-  font-weight: 100;
-  color: #fff;
   text-align: center; }
 
-#welcome-message h1 {
-  font-size: 1em;
+#welcome-message h2 {
   animation-name: fadeUp;
   animation-duration: 1s; }
 
@@ -360,3 +380,13 @@ p {
   padding-bottom: 30px;
   display: flex;
   justify-content: center; }
+
+#blurb {
+  width: 900px;
+  display: none;
+  text-align: center; }
+
+#blurb h1:first-child {
+  font-size: 2em;
+  font-weight: 200;
+  margin-bottom: 0; }

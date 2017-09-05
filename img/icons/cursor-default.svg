@@ -3,7 +3,7 @@
 	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <style>
 .cursor-default-color {
-	fill: red;
+	fill: #DD0031;
 }
 </style>
 <g>

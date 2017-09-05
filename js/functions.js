@@ -1,11 +1,6 @@
 $(document).ready(function(){
 	// set starting states
 	$('.hud-caption').hide();
-	$('.hud-item').css({opacity: '0'});
-	$('#hud-item-1').css({
-		top: 'calc(50vh - 100px)',
-		left: 'calc(50vw - 100px)',
-	});
 	$('#hud-item-2').css({
 		top: 'calc(50vh - 100px)',
 		right: 'calc(50vw - 100px)'
@@ -18,34 +13,28 @@ $(document).ready(function(){
 		bottom: 'calc(50vh - 100px)',
 		right: 'calc(50vw - 100px)'
 	});
-	// fade out welcome, fade in icons
+	// fade out welcome
 	$('#welcome-message').delay(2000).fadeOut(500, function(){
-		$('#hud-item-1').animate({
-			opacity: '1'
-		}, 500);
-		$('#hud-item-2').delay(500).animate({
-			opacity: '1'
-		}, 500);
-		$('#hud-item-3').delay(1000).animate({
-			opacity: '1'
-		}, 500);
-		$('#hud-item-4').delay(1500).animate({
-			opacity: '1'
-		}, 500);
+		// fade in icons
+		$('#hud-icon-1').fadeIn(500);
+		$('#hud-icon-2').delay(500).fadeIn(500);
+		$('#hud-icon-3').delay(1000).fadeIn(500);
+		$('#hud-icon-4').delay(1500).fadeIn(500);
+		// place icons in corners
 		// move icons to corners
 		$('#hud-item-1').delay(2000).animate({
 			top: '0',
 			left: '0'
 		}, 500);
-		$('#hud-item-2').delay(1500).animate({
+		$('#hud-item-2').delay(2000).animate({
 			top: '0',
 			right: '0'
 		}, 500);
-		$('#hud-item-3').delay(1000).animate({
+		$('#hud-item-3').delay(2000).animate({
 			bottom: '0',
 			left: '0'
 		}, 500);
-		$('#hud-item-4').delay(500).animate({
+		$('#hud-item-4').delay(2000).animate({
 			bottom: '0',
 			right: '0'
 		}, 500);
@@ -62,6 +51,7 @@ $(document).ready(function(){
 			opacity: '1',
 			transform: 'translateX(0%)'
 		});
+		$('#blurb').fadeIn(1000);
 	});
 	// icon animations
 	$('#hud-item-4').mouseover(function(){
@@ -97,9 +87,11 @@ $(document).ready(function(){
 	// modal toggling
 	$('#portfolio').hide();
 	$('#hud-item-2').click(function(){
-		$('#portfolio').slideToggle();
+		$('#modal-dimmer').fadeIn(300);
+		$('#portfolio').slideToggle(300);
 	});
 	$('#close-portfolio').click(function(){
-		$('#portfolio').slideToggle();
+		$('#modal-dimmer').fadeOut(300);
+		$('#portfolio').slideToggle(300);
 	});
 });

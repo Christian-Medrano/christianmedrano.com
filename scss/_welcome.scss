@@ -3,15 +3,10 @@
 }
 
 #welcome-message {
-	font-family: $font-sans-serif;
-	font-size: 5em;
-	font-weight: 100;
-	color: #fff;
 	text-align: center;
 }
 
-#welcome-message h1 {
-	font-size: 1em;
+#welcome-message h2 {
 	animation-name: fadeUp;
 	animation-duration: 1s;
 }

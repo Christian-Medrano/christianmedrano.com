@@ -1,6 +1,6 @@
 <div id="portfolio" class="modal center">
 	<div class="modal-bar">
-		<h2>Portfolio</h2>
+		<img src="img/icons/behance-badge.svg" alt="">
 		<img id="close-portfolio" class="btn-close" src="img/icons/close.svg" alt="exit">
 	</div>
 
@@ -40,9 +40,6 @@
 					echo '<p>Could not retrieve projects.</p>';
 				}
 			?>
-		</div>
-		<div id="behance-badge">
-			<img src="img/icons/powered-by-behance.svg" alt="">
 		</div>
 	 </div>
 </div>
