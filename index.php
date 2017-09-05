@@ -1,3 +1,4 @@
+
 <?php 
 
 include 'header.php'; 
@@ -9,7 +10,7 @@ include 'portfolio.php';
 <!-- scene overlay -->
 <div class="scene-overlay fullscreen" style="background-color: rgba(0, 0, 0, 0.5);"></div>
 <!-- Parallax Scene -->
-<div id="scene-container" class="fullscreen">
+<div id="scene-container" class="fullscreen center">
 	<div id="scene" class="scene">
 		<div class="layer" data-depth="0.00">
 			<img src="img/scene/4.jpg" alt="">

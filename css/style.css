@@ -99,26 +99,71 @@ body {
   left: 50vw;
   transform: translate(-50%, -50%); }
 
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 100;
+  src: url("fonts/PangramSans/Pangram-ExtraLight.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 200;
+  src: url("fonts/PangramSans/Pangram-Light.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 300;
+  src: url("fonts/PangramSans/Pangram-Regular.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 400;
+  src: url("fonts/PangramSans/Pangram-Medium.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 500;
+  src: url("fonts/PangramSans/Pangram-Bold.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 600;
+  src: url("fonts/PangramSans/Pangram-ExtraBold.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 700;
+  src: url("fonts/PangramSans/Pangram-Black.otf"); }
+
 h2 {
   color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
   font-size: 20px; }
 
 h3 {
   color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
   font-weight: bold;
   font-size: 20px;
   margin-bottom: 10px; }
 
 h4 {
   color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
   font-size: 16px; }
 
+h5 {
+  color: white;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 20px; }
+
 p {
-  font-family: Helvetica, sans-serif;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
   font-size: 18px;
+  font-weight: 300;
   color: #fff; }
 
 .modal {
@@ -178,7 +223,7 @@ p {
 
 .hud-caption {
   color: white;
-  font-family: Helvetica, sans-serif;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
   font-size: 20px;
   opacity: 0;
   transform: translateX(-100%);
@@ -210,9 +255,9 @@ p {
   background-color: #000; }
 
 #welcome-message {
-  font-family: Helvetica, sans-serif;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
   font-size: 5em;
-  font-weight: light;
+  font-weight: 100;
   color: #fff;
   text-align: center; }
 
