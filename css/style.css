@@ -172,7 +172,8 @@ h6 {
   color: white;
   font-family: "Pangram Sans", Helvetica, sans-serif;
   font-weight: 200;
-  font-size: 1em; }
+  font-size: 1em;
+  line-height: 1em; }
 
 p {
   font-family: "Pangram Sans", Helvetica, sans-serif;
@@ -252,8 +253,11 @@ p {
 
 .hud-caption {
   color: white;
+  display: flex;
+  align-items: center;
   font-family: "Pangram Sans", Helvetica, sans-serif;
   opacity: 0;
+  height: 1.5em;
   transform: translateX(-100%);
   transition-duration: 1s; }
 
@@ -275,6 +279,9 @@ p {
 #iris {
   position: relative;
   transition-duration: 0.3s; }
+
+#personal-name {
+  float: top; }
 
 #welcome {
   background-color: #000; }

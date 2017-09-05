@@ -46,8 +46,11 @@
 
 .hud-caption {
 	color: white;
+	display: flex;
+	align-items: center;
 	font-family: $font-sans-serif;
 	opacity: 0;
+	height: 1.5em;
 	transform: translateX(-100%);
 	transition-duration: 1s;
 }
@@ -70,4 +73,10 @@
 #iris {
 	position: relative;
 	transition-duration: $icon-speed;
+}
+#personal-name{
+	float: top;
+}
+#brand-name{
+
 }

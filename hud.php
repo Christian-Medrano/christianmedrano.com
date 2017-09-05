@@ -6,7 +6,8 @@
 			<?php include 'img/icons/logo.php'; ?>
 		</div>
 		<div class="hud-caption-container">
-			<h6 class="hud-caption">Christian Medrano</h6>
+			<h6 id="brand-name" class="hud-caption">Swiss Army Designer</h6>
+			<!-- <h6 id="personal-name" class="hud-caption">Christian Medrano</h6> -->
 		</div>
 	</div>
 	

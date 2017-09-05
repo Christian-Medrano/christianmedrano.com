@@ -84,6 +84,8 @@ $(document).ready(function(){
 			transform: 'translateX(0%)'
 		});
 	});
+
+
 	// modal toggling
 	$('#portfolio').hide();
 	$('#hud-item-2').click(function(){
