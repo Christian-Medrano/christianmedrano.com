@@ -96,4 +96,14 @@ $(document).ready(function(){
 		$('#modal-dimmer').fadeOut(300);
 		$('#portfolio').slideToggle(300);
 	});
+
+	$('#contact').hide();
+	$('#hud-item-4').click(function(){
+		$('#modal-dimmer').fadeIn(300);
+		$('#contact').slideToggle(300);
+	});
+	$('#close-contact').click(function(){
+		$('#modal-dimmer').fadeOut(300);
+		$('#contact').slideToggle(300);
+	});
 });

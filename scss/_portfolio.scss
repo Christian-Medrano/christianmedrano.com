@@ -1,18 +1,3 @@
-#portfolio{
-	position: absolute;
-	display: block;
-	display: none;
-	height: 75%;
-	width: 50%;
-}
-#projects-container{
-	width: 100%;
-	min-height: calc(100% - 60px);
-	min-height: calc(100% - 60px);
-	max-height: calc(100% - 60px);
-	max-height: calc(100% - 60px);
-	overflow: auto;
-}
 #projects{
 	display: flex;
 	flex-wrap: wrap;
@@ -20,10 +5,8 @@
 }
 .project{
 	position: relative;
-	width: 33%;
+	width: 50%;
 	height: 200px;
-	background-color: #777;
-	border: 1px solid #000;
 }
 .cover{
 	overflow: hidden;
@@ -34,8 +17,12 @@
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
+
 $project-info-padding: 20px;
+
 .project-info{
 	position: absolute;
 	padding: $project-info-padding;
@@ -43,13 +30,14 @@ $project-info-padding: 20px;
 	width: calc(100% - 40px);
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.75);
+	background-color: rgba(221, 0, 49, 0.75);
 	opacity: 0;
 	transition-duration: 0.3s;
+	text-align: center;
 }
 .project-info:hover{
 	opacity: 1;
-	transition-duration: 0.3s;
+	// transition-duration: 0.3s;
 }
 #behance-badge{
 	position: relative;
@@ -59,4 +47,13 @@ $project-info-padding: 20px;
 	padding-bottom: 30px;
 	display: flex;
 	justify-content: center;
+}
+
+@media only screen and (max-width: 415px){
+	#portfolio{
+		width: calc(100% - 30px);
+	}
+	.project{
+		width: 100%;
+	}
 }

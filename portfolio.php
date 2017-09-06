@@ -1,10 +1,10 @@
 <div id="portfolio" class="modal center">
 	<div class="modal-bar">
-		<img src="img/icons/behance-badge.svg" alt="">
+		<img src="img/logos/behance-badge.svg" alt="">
 		<img id="close-portfolio" class="btn-close" src="img/icons/close.svg" alt="exit">
 	</div>
 
-	<div id="projects-container">
+	<div class="modal-container">
 		<div id="projects">
 			<?php 
 				$postsURL = 'https://api.behance.net/v2/users/christianmedrano/projects?client_id=nJKyMss8eOnHmuOOFVmfSGi9QwyDCZNy';
@@ -25,11 +25,11 @@
 
 						echo '<div class="project-info">';
 						echo '<h3>'.$project->name.'</h3>';
-						echo '<ul>';
-						foreach ($project->fields as $field) {
-							echo '<li><h4>'.$field.'</h4></li>';
-						}
-						echo '</ul>';
+						// echo '<ul>';
+						// foreach ($project->fields as $field) {
+						// 	echo '<li><h4>'.$field.'</h4></li>';
+						// }
+						// echo '</ul>';
 						echo '</div>';
 
 						echo '</a>';

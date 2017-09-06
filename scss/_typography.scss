@@ -83,3 +83,9 @@ p {
 	color: #fff;
 	line-height: 1.5em;
 }
+
+@media only screen and (max-width: 415px){
+	h1 {
+		font-size: 3em;
+	}
+}

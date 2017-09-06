@@ -1,3 +1,11 @@
+.modal-container{
+	width: 100%;
+	// min-height: calc(100% - 60px);
+	// min-width: calc(100% - 60px);
+	max-height: calc(100% - 60px);
+	max-width: calc(100% - 60px);
+	overflow: auto;
+}
 .modal-bar {
 	padding-bottom: 30px;
 	display: flex;
@@ -7,6 +15,11 @@
 .modal{
 	z-index: 6;
 	padding: 30px;
+	position: absolute;
+	display: block;
+	display: none;
+	height: 75%;
+	width: 50%;
 }
 #modal-dimmer{
 	z-index: 5;
