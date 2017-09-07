@@ -8,12 +8,18 @@ input, input:focus, textarea{
 
 $input-border: 3px solid #777;
 $input-border-focused: 3px solid $color-brand;
+$input-border-valid: 3px solid green;
 $input-transition-duration: 0.3s;
 $input-padding: 8px;
 $input-font-size: 16px;
 $input-background-color: rgba(255, 255, 255, 0.15);
 $input-background-color-focused: rgba(0, 0, 0, 0);
 $input-width: calc(100% - 16px);
+
+.form-group{
+	position: relative;
+
+}
 
 label{
 	font-family: $font-sans-serif;
@@ -24,10 +30,9 @@ label{
 	margin-bottom: 16px;
 	margin-left: 8px;
 	position: absolute;
-	transform: translateY(28px);
 	transition-duration: $input-transition-duration;
 }
-input{
+input, textarea{
 	width: $input-width;
 	margin-bottom: 16px;
 	background-color: $input-background-color;
@@ -36,26 +41,25 @@ input{
 	padding: $input-padding;
 	font-size: $input-font-size;
 }
-input:focus{
+input:focus, textarea:focus{
 	background-color: $input-background-color-focused;
 	border-bottom: $input-border-focused;
 	transition-duration: $input-transition-duration;
 }
-textarea{
-	width: $input-width;
-	margin-bottom: 16px;
-	background-color: $input-background-color;
-	border-bottom: $input-border;
-	transition-duration: $input-transition-duration;
-	padding: $input-padding;
-	font-size: $input-font-size;
+input:valid, textarea:valid{
+	border-bottom: $input-border-valid;
 }
-textarea:focus{
-	width: $input-width;
-	background-color: $input-background-color-focused;
-	border-bottom: $input-border-focused;
-	transition-duration: $input-transition-duration;
+
+input[type="submit"]{
+	margin-top: 16px;
+	border: none;
+	padding: 16px;
+	width: auto;
+	background-color: white;
+	color: black;
+	border-radius: 30px;
 }
-.input-filled{
-	transition-duration: $input-transition-duration;
+input[type="submit"]:hover{
+	background-color: #f1f1f1;
+	cursor: pointer;
 }

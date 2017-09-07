@@ -1,27 +1,4 @@
-.modal-container{
-	width: 100%;
-	overflow: auto;
-}
-.modal-bar {
-	padding-bottom: 30px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.modal{
-	z-index: 6;
-	padding: 30px;
-	position: absolute;
-	display: block;
-	display: none;
-	height: 75%;
-	width: 50%;
-}
-#modal-dimmer{
-	z-index: 5;
-	background-color: rgba(0, 0, 0, 0.85);
-	display: none;
-}
+// layering
 #hud {
 	z-index: 4;
 }
@@ -37,6 +14,34 @@
 #scene-container {
 	z-index: 0;
 }
+
+// modal
+.modal{
+	z-index: 6;
+	padding: 30px;
+	position: absolute;
+	display: block;
+	display: none;
+	height: 75%;
+	width: 50%;
+}
+.modal-bar {
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.modal-container{
+	width: 100%;
+	max-height: calc(100% - 60px);
+	overflow: auto;
+}
+#modal-dimmer{
+	z-index: 5;
+	background-color: rgba(0, 0, 0, 0.85);
+	display: none;
+}
+
 @media only screen and (max-width: 415px){
 	.modal{
 		width: calc(100% - 40px);

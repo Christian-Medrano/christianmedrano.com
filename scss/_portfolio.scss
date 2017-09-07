@@ -17,8 +17,8 @@
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
-	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+	// -webkit-filter: grayscale(100%);
+ 	// filter: grayscale(100%);
 }
 
 $project-info-padding: 20px;
@@ -30,7 +30,7 @@ $project-info-padding: 20px;
 	width: calc(100% - 40px);
 	top: 0;
 	left: 0;
-	background-color: rgba(221, 0, 49, 0.75);
+	background-color: rgba(0, 0, 0, 0.85);
 	opacity: 0;
 	transition-duration: 0.3s;
 	text-align: center;

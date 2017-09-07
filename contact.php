@@ -1,3 +1,7 @@
+<?php 
+	require_once "recaptchalib.php";
+?>
+
 <div id="contact" class="modal center">
 	<div class="modal-bar">
 		<h5>Say Hello</h5>
@@ -5,29 +9,36 @@
 	</div>
 
 	<div class="modal-container">
-		<form action="" method="post">
 
-			<label for="name" id="name-label">Name</label>
+		<form id="ajax-contact" method="post" action="send_email.php">
+			<div class="field">
+				<label for="name" id="name-label">Name</label>
+				<br>
+				<input name="name" id="name-input" required>
+			</div>
 			<br>
-			<input name="name" id="name-input" required>
+			<div class="field">
+				<label for="email" id="email-label">Email</label>
+				<br>
+				<input type="email" name="email" id="email-input" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+			</div>
 			<br>
-
-			<label for="email" id="email-label">Email</label>
-			<br>
-			<input type="email" name="email" id="email-input" required>
-			<br>
-
-			<label for="message" id="message-label">Message</label>
-			<br>
-			<textarea name="message" id="message-input" rows="5" cols="30"></textarea>
+			<div class="field">
+				<label for="message" id="message-label">Message</label>
+				<br>
+				<textarea name="message" id="message-input" rows="5" cols="30"  required></textarea>
+			</div>
 			<br>
 
 			<div class="g-recaptcha" data-sitekey="6LckGC4UAAAAAPCvtzJ7KXUVRUCVvzAgM_etvkst" data-theme="dark"></div>
-
-			<input type="submit" value="Submit">
-
+			
+			<div class="field">
+				<button id="submit" type="submit" value="Submit">Submit</button>
+			</div>
 		</form>
 	</div>
+
+	<div><p id="form-messages"></p></div>
 		
 	
 	<!-- reCaptcha Script -->
