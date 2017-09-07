@@ -166,7 +166,7 @@ h5 {
   color: white;
   font-family: "Pangram Sans", Helvetica, sans-serif;
   font-weight: 200;
-  font-size: 1em; }
+  font-size: 2em; }
 
 h6 {
   color: white;
@@ -188,8 +188,6 @@ p {
 
 .modal-container {
   width: 100%;
-  max-height: calc(100% - 60px);
-  max-width: calc(100% - 60px);
   overflow: auto; }
 
 .modal-bar {
@@ -226,6 +224,10 @@ p {
 
 #scene-container {
   z-index: 0; }
+
+@media only screen and (max-width: 415px) {
+  .modal {
+    width: calc(100% - 40px); } }
 
 .hud-item {
   display: flex;
@@ -406,8 +408,6 @@ p {
   justify-content: center; }
 
 @media only screen and (max-width: 415px) {
-  #portfolio {
-    width: calc(100% - 30px); }
   .project {
     width: 100%; } }
 
@@ -420,3 +420,53 @@ p {
   font-size: 2em;
   font-weight: 200;
   margin-bottom: 0; }
+
+input, input:focus, textarea {
+  outline: none;
+  background-color: none;
+  border: none;
+  color: #fff; }
+
+label {
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1em;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  position: absolute;
+  transform: translateY(28px);
+  transition-duration: 0.3s; }
+
+input {
+  width: calc(100% - 16px);
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-bottom: 3px solid #777;
+  transition-duration: 0.3s;
+  padding: 8px;
+  font-size: 16px; }
+
+input:focus {
+  background-color: transparent;
+  border-bottom: 3px solid red;
+  transition-duration: 0.3s; }
+
+textarea {
+  width: calc(100% - 16px);
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-bottom: 3px solid #777;
+  transition-duration: 0.3s;
+  padding: 8px;
+  font-size: 16px; }
+
+textarea:focus {
+  width: calc(100% - 16px);
+  background-color: transparent;
+  border-bottom: 3px solid red;
+  transition-duration: 0.3s; }
+
+.input-filled {
+  transition-duration: 0.3s; }

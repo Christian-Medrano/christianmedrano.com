@@ -20,7 +20,6 @@ $(document).ready(function(){
 		$('#hud-icon-2').delay(500).fadeIn(500);
 		$('#hud-icon-3').delay(1000).fadeIn(500);
 		$('#hud-icon-4').delay(1500).fadeIn(500);
-		// place icons in corners
 		// move icons to corners
 		$('#hud-item-1').delay(2000).animate({
 			top: '0',
@@ -85,7 +84,6 @@ $(document).ready(function(){
 		});
 	});
 
-
 	// modal toggling
 	$('#portfolio').hide();
 	$('#hud-item-2').click(function(){
@@ -105,5 +103,10 @@ $(document).ready(function(){
 	$('#close-contact').click(function(){
 		$('#modal-dimmer').fadeOut(300);
 		$('#contact').slideToggle(300);
+	});
+
+	// input label positioning
+	$('#name-input').focus(function(){
+		$('#name-label').fadeOut(300);
 	});
 });

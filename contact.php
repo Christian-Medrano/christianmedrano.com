@@ -7,14 +7,20 @@
 	<div class="modal-container">
 		<form action="" method="post">
 
-			<label for="name">Name</label>
-			<input name="name" required><br />
+			<label for="name" id="name-label">Name</label>
+			<br>
+			<input name="name" id="name-input" required>
+			<br>
 
-			<label for="email">Email</label>
-			<input type="email" name="email" required><br />
+			<label for="email" id="email-label">Email</label>
+			<br>
+			<input type="email" name="email" id="email-input" required>
+			<br>
 
-			<label for="message">Message</label>
-			<input type="text" name="message" required><br />
+			<label for="message" id="message-label">Message</label>
+			<br>
+			<textarea name="message" id="message-input" rows="5" cols="30"></textarea>
+			<br>
 
 			<div class="g-recaptcha" data-sitekey="6LckGC4UAAAAAPCvtzJ7KXUVRUCVvzAgM_etvkst" data-theme="dark"></div>
 

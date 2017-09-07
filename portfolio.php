@@ -37,7 +37,7 @@
 						
 					}
 				} else {
-					echo '<p>Could not retrieve projects.</p>';
+					echo '<p>Could not retrieve projects. Please make sure your internet connection is stable, and reload the page</p>';
 				}
 			?>
 		</div>

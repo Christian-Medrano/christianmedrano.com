@@ -1,0 +1,61 @@
+// clear inputs
+input, input:focus, textarea{
+	outline: none;
+	background-color: none;
+	border: none;
+	color: #fff;
+}
+
+$input-border: 3px solid #777;
+$input-border-focused: 3px solid $color-brand;
+$input-transition-duration: 0.3s;
+$input-padding: 8px;
+$input-font-size: 16px;
+$input-background-color: rgba(255, 255, 255, 0.15);
+$input-background-color-focused: rgba(0, 0, 0, 0);
+$input-width: calc(100% - 16px);
+
+label{
+	font-family: $font-sans-serif;
+	font-size: 0.8em;
+	font-weight: 300;
+	color: #fff;
+	line-height: 1em;
+	margin-bottom: 16px;
+	margin-left: 8px;
+	position: absolute;
+	transform: translateY(28px);
+	transition-duration: $input-transition-duration;
+}
+input{
+	width: $input-width;
+	margin-bottom: 16px;
+	background-color: $input-background-color;
+	border-bottom: $input-border;
+	transition-duration: $input-transition-duration;
+	padding: $input-padding;
+	font-size: $input-font-size;
+}
+input:focus{
+	background-color: $input-background-color-focused;
+	border-bottom: $input-border-focused;
+	transition-duration: $input-transition-duration;
+}
+textarea{
+	width: $input-width;
+	margin-bottom: 16px;
+	background-color: $input-background-color;
+	border-bottom: $input-border;
+	transition-duration: $input-transition-duration;
+	padding: $input-padding;
+	font-size: $input-font-size;
+}
+textarea:focus{
+	width: $input-width;
+	background-color: $input-background-color-focused;
+	border-bottom: $input-border-focused;
+	transition-duration: $input-transition-duration;
+}
+.input-filled{
+	transition-duration: $input-transition-duration;
+}
