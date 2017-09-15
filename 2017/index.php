@@ -29,9 +29,9 @@ include 'welcome.php';
 	</div>
 
 	<div id="blurb" class="center">
-		<h1>Looking for user experience solutions?</h1>
-		<h1>I'm your guy</h1>
-		<p>My name is Christian Medrano, and I am a Los Angeles based visual designer<br> with a passion for user experience and front end development.</p>
+		<h1>elegant design solutions by</h1>
+		<h1>Christian Medrano</h1>
+		<p>A Los Angeles based visual designer<br> with a passion for user experience and front end development.</p>
 	</div>
 
 

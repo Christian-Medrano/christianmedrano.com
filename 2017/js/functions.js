@@ -14,6 +14,20 @@ $(document).ready(function(){
 		$('#welcome-message').text('Hello');
 	}
 
+	var w = $(window).width();
+	var h = $(window).height();
+	var aspectRatio = h/w;
+
+	if (aspectRatio > 0.526){
+		$('.layer').children('img').css({
+			'width': '100vw'
+		});
+	} else {
+		$('.layer').children('img').css({
+			'height': '100vh'
+		});
+	}
+
 	// set starting states
 	$('.hud-caption').hide();
 	$('#hud-item-2').css({

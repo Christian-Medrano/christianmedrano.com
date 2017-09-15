@@ -308,9 +308,7 @@ input {
     display: none; } }
 
 #scene img {
-  display: block;
-  max-height: 100vh;
-  min-width: 100vw; }
+  display: block; }
 
 #scene-container {
   margin: 0 auto;
@@ -372,31 +370,24 @@ input {
 
 #projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  flex-wrap: wrap; }
 
 .project {
   position: relative;
-  width: 50%;
-  height: 200px; }
-
-.cover {
-  overflow: hidden;
-  height: 100%;
-  width: 100%; }
+  width: 50%; }
 
 .cover img {
-  height: 100%;
   width: 100%;
-  object-fit: cover; }
+  vertical-align: top; }
 
 .project-info {
   position: absolute;
+  top: 0;
+  left: 0;
   padding: 20px;
   height: calc(100% - 40px);
   width: calc(100% - 40px);
-  top: 0;
-  left: 0;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.85);
   opacity: 0;
   transition-duration: 0.3s;
@@ -413,6 +404,48 @@ input {
   padding-bottom: 30px;
   display: flex;
   justify-content: center; }
+
+.cta {
+  border: 2px solid #fff;
+  padding: 16px;
+  color: #fff;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  border-radius: 50px;
+  margin: 20px 0 !important; }
+
+.cta a:link {
+  text-decoration: none; }
+
+.stats {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.stat {
+  position: relative;
+  display: flex;
+  margin-right: 32px; }
+
+.stat:last-child {
+  margin-right: 0; }
+
+.stat img {
+  height: 16px;
+  margin-right: 8px; }
+
+.fields li {
+  display: inline-block;
+  margin-right: 10px; }
+
+.fields li:last-child {
+  display: inline-block;
+  margin-right: 0px; }
+
+.fields li h4 {
+  font-size: 14px;
+  color: #999; }
 
 @media only screen and (max-width: 415px) {
   .project {
@@ -459,22 +492,23 @@ input, textarea {
   font-size: 16px; }
 
 input:focus, textarea:focus {
-  background-color: transparent;
+  background: transparent;
   border-bottom: 3px solid red;
   transition-duration: 0.3s; }
 
 input:valid, textarea:valid {
   border-bottom: 3px solid green; }
 
-input[type="submit"] {
-  margin-top: 16px;
-  border: none;
+button {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
   padding: 16px;
-  width: auto;
-  background-color: white;
-  color: black;
-  border-radius: 30px; }
+  color: #000;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 1em; }
 
-input[type="submit"]:hover {
-  background-color: #f1f1f1;
+button:hover {
+  background-color: #efefef;
+  border: 2px solid #efefef;
   cursor: pointer; }
