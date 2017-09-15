@@ -1,0 +1,49 @@
+// layering
+#hud {
+	z-index: 4;
+}
+#blurb{
+	z-index: 3;
+}
+#welcome {
+	z-index: 2;
+}
+.scene-overlay{
+	z-index: 1;
+}
+#scene-container {
+	z-index: 0;
+}
+
+// modal
+.modal{
+	z-index: 6;
+	padding: 30px;
+	position: absolute;
+	display: block;
+	display: none;
+	height: 75%;
+	width: 50%;
+}
+.modal-bar {
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.modal-container{
+	width: 100%;
+	max-height: calc(100% - 60px);
+	overflow: auto;
+}
+#modal-dimmer{
+	z-index: 5;
+	background-color: rgba(0, 0, 0, 0.85);
+	display: none;
+}
+
+@media only screen and (max-width: 415px){
+	.modal{
+		width: calc(100% - 40px);
+	}
+}

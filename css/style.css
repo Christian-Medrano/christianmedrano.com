@@ -1,0 +1,514 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+ * Mixin printing a linear-gradient
+ * as well as a plain color fallback
+ * and the `-webkit-` prefixed declaration
+ * @access public
+ * @param {Keyword | Angle} $direction - Linear gradient direction
+ * @param {Arglist} $color-stops - List of color-stops composing the gradient
+ *
+ * @see https://www.sitepoint.com/building-linear-gradient-mixin-sass/
+ */
+::selection {
+  color: white;
+  background: red; }
+
+::-webkite-scrollbar-track {
+  border-radius: 10px; }
+
+::-webkit-scrollbar {
+  width: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px; }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px; }
+
+.btn-close {
+  height: 16px;
+  width: 16px;
+  opacity: 0.5;
+  transition-duration: 0.3s; }
+
+.btn-close:hover {
+  opacity: 1;
+  transition-duration: 0.3s; }
+
+body {
+  cursor: url("../img/cursor/cursor-default.svg"), default;
+  cursor: url("../img/cursor/cursor-default.svg"), auto; }
+
+.fullscreen {
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  overflow: hidden; }
+
+.center {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 100;
+  src: url("fonts/PangramSans/Pangram-ExtraLight.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 200;
+  src: url("fonts/PangramSans/Pangram-Light.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 300;
+  src: url("fonts/PangramSans/Pangram-Regular.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 400;
+  src: url("fonts/PangramSans/Pangram-Medium.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 500;
+  src: url("fonts/PangramSans/Pangram-Bold.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 600;
+  src: url("fonts/PangramSans/Pangram-ExtraBold.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 700;
+  src: url("fonts/PangramSans/Pangram-Black.otf"); }
+
+h1 {
+  color: white;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 5em;
+  text-transform: uppercase;
+  margin-bottom: 0.1em; }
+
+h2 {
+  color: white;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 4em; }
+
+h3 {
+  color: white;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  margin-bottom: 10px; }
+
+h4 {
+  color: white;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1em; }
+
+h5 {
+  color: white;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 2em; }
+
+h6 {
+  color: white;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  line-height: 1em; }
+
+p {
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  color: #fff;
+  line-height: 1.5em; }
+
+@media only screen and (max-width: 415px) {
+  h1 {
+    font-size: 3em; } }
+
+input {
+  font-family: "Pangram Sans", Helvetica, sans-serif; }
+
+#hud {
+  z-index: 4; }
+
+#blurb {
+  z-index: 3; }
+
+#welcome {
+  z-index: 2; }
+
+.scene-overlay {
+  z-index: 1; }
+
+#scene-container {
+  z-index: 0; }
+
+.modal {
+  z-index: 6;
+  padding: 30px;
+  position: absolute;
+  display: block;
+  display: none;
+  height: 75%;
+  width: 50%; }
+
+.modal-bar {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.modal-container {
+  width: 100%;
+  max-height: calc(100% - 60px);
+  overflow: auto; }
+
+#modal-dimmer {
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none; }
+
+@media only screen and (max-width: 415px) {
+  .modal {
+    width: calc(100% - 40px); } }
+
+.hud-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 30px;
+  position: absolute;
+  transition-duration: 0.5s; }
+
+.hud-item:hover {
+  cursor: pointer; }
+
+#hud-item-1 {
+  top: calc(50vh - 100px);
+  left: calc(50vw - 100px); }
+
+.hud-item:nth-child(2) {
+  right: 0;
+  flex-direction: row-reverse; }
+
+.hud-item:nth-child(3) {
+  left: 0;
+  bottom: 0; }
+
+.hud-item:nth-child(4) {
+  right: 0;
+  bottom: 0;
+  flex-direction: row-reverse; }
+
+.hud-icon {
+  height: 50px;
+  width: 50px; }
+
+#hud-icon-1, #hud-icon-2, #hud-icon-3, #hud-icon-4 {
+  display: none; }
+
+.icon-color {
+  fill: #fff; }
+
+.hud-caption {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  opacity: 0;
+  height: 1.5em;
+  transform: translateX(-100%);
+  transition-duration: 1s; }
+
+.hud-caption-right {
+  transform: translateX(100%);
+  transition-duration: 1s; }
+
+.hud-caption-container {
+  overflow: hidden; }
+
+#letter {
+  position: relative;
+  transition-duration: 0.3s; }
+
+#arrow {
+  position: relative;
+  transition-duration: 0.3s; }
+
+#iris {
+  position: relative;
+  transition-duration: 0.3s; }
+
+#personal-name {
+  float: top; }
+
+@media only screen and (max-width: 415px) {
+  .hud-caption-container {
+    display: none; } }
+
+#scene img {
+  display: block; }
+
+#scene-container {
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%); }
+
+#scene {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: red; }
+
+#welcome {
+  background-color: #000; }
+
+#welcome-message {
+  text-align: center; }
+
+@keyframes fadeUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0%);
+    opacity: 1; } }
+
+.fade-up {
+  animation-name: fadeUp;
+  animation-duration: 1s; }
+
+@keyframes fadeRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0%);
+    opacity: 1; } }
+
+.fadeRight {
+  animation-name: fadeRight;
+  animation-duration: 1s;
+  opacity: 1; }
+
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0; }
+  100% {
+    transform: translateX(0%);
+    opacity: 1; } }
+
+.fadeLeft {
+  animation-name: fadeLeft;
+  animation-duration: 1s;
+  opacity: 1; }
+
+#projects {
+  display: flex;
+  flex-wrap: wrap; }
+
+.project {
+  position: relative;
+  width: 50%; }
+
+.cover img {
+  width: 100%;
+  vertical-align: top; }
+
+.project-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition-duration: 0.3s;
+  text-align: center; }
+
+.project-info:hover {
+  opacity: 1; }
+
+#behance-badge {
+  position: relative;
+  width: 100%;
+  height: 115px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center; }
+
+.cta {
+  border: 2px solid #fff;
+  padding: 16px;
+  color: #fff;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  border-radius: 50px;
+  margin: 20px 0 !important; }
+
+.cta a:link {
+  text-decoration: none; }
+
+.stats {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+
+.stat {
+  position: relative;
+  display: flex;
+  margin-right: 32px; }
+
+.stat:last-child {
+  margin-right: 0; }
+
+.stat img {
+  height: 16px;
+  margin-right: 8px; }
+
+.fields li {
+  display: inline-block;
+  margin-right: 10px; }
+
+.fields li:last-child {
+  display: inline-block;
+  margin-right: 0px; }
+
+.fields li h4 {
+  font-size: 14px;
+  color: #999; }
+
+@media only screen and (max-width: 415px) {
+  .project {
+    width: 100%; } }
+
+#blurb {
+  display: none;
+  width: 90%;
+  text-align: center; }
+
+#blurb h1:first-child {
+  font-size: 2em;
+  font-weight: 200;
+  margin-bottom: 0; }
+
+input, input:focus, textarea {
+  outline: none;
+  background-color: none;
+  border: none;
+  color: #fff; }
+
+.form-group {
+  position: relative; }
+
+label {
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1em;
+  margin-bottom: 16px;
+  margin-left: 8px;
+  position: relative;
+  transition-duration: 0.3s;
+  display: none; }
+
+input, textarea {
+  width: calc(100% - 16px);
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-bottom: 3px solid #777;
+  transition-duration: 0.3s;
+  padding: 8px;
+  font-size: 16px; }
+
+input:focus, textarea:focus {
+  background: transparent;
+  border-bottom: 3px solid red;
+  transition-duration: 0.3s; }
+
+input:valid, textarea:valid {
+  border-bottom: 3px solid green; }
+
+button {
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 16px;
+  color: #000;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 1em; }
+
+button:hover {
+  background-color: #efefef;
+  border: 2px solid #efefef;
+  cursor: pointer; }

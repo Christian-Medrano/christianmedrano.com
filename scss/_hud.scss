@@ -1,0 +1,83 @@
+.hud-item {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin: 30px;
+	position: absolute;
+	transition-duration: 0.5s;
+}
+.hud-item:hover{
+	cursor: pointer;
+}
+#hud-item-1{
+	top: calc(50vh - 100px);
+	left: calc(50vw - 100px);
+}
+.hud-item:nth-child(2){
+	right: 0;
+	flex-direction: row-reverse;
+}
+.hud-item:nth-child(3){
+	left: 0;
+	bottom: 0;
+}
+.hud-item:nth-child(4){
+	right: 0;
+	bottom: 0;
+	flex-direction: row-reverse;
+}
+
+.hud-icon {
+	height: $hud-icon-size;
+	width: $hud-icon-size;
+}
+#hud-icon-1, #hud-icon-2, #hud-icon-3, #hud-icon-4{
+	display: none;
+}
+
+.icon-color {
+	fill: #fff;
+}
+
+.hud-caption {
+	color: white;
+	display: flex;
+	align-items: center;
+	font-family: $font-sans-serif;
+	opacity: 0;
+	height: 1.5em;
+	transform: translateX(-100%);
+	transition-duration: 1s;
+}
+.hud-caption-right {
+	transform: translateX(100%);
+	transition-duration: 1s;
+}
+.hud-caption-container {
+	overflow: hidden;
+}
+
+#letter {
+	position: relative;
+	transition-duration: $icon-speed;
+}
+#arrow {
+	position: relative;
+	transition-duration: $icon-speed;
+}
+#iris {
+	position: relative;
+	transition-duration: $icon-speed;
+}
+#personal-name{
+	float: top;
+}
+#brand-name{
+
+}
+
+@media only screen and (max-width: 415px){
+	.hud-caption-container{
+		display: none;
+	}
+}
