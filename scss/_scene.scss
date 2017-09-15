@@ -1,12 +1,21 @@
-.layer{
-	min-height: 100%;
+#scene img {
+	display: block;
+	max-height: 100vh;
+	min-width: 100vw;
 }
+
+#scene-container{
+	margin: 0 auto;
+	height: 100%;
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+}
+
 #scene{
 	height: 100%;
-	width: 100%;
+	margin: 0;
+	padding: 0;
 	background-color: red;
-}
-#scene-container{
-	height: 100%;
-	width: 100%;
 }

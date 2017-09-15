@@ -7,8 +7,9 @@
 <script>
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene, {
-	originX: 0,
-	originY: 0
+	// originX: 0,
+	// originY: 0,
+	limitY: 0
 });
 </script>
 </body>

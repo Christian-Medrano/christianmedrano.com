@@ -307,27 +307,30 @@ input {
   .hud-caption-container {
     display: none; } }
 
-.layer {
-  min-height: 100%; }
+#scene img {
+  display: block;
+  max-height: 100vh;
+  min-width: 100vw; }
+
+#scene-container {
+  margin: 0 auto;
+  height: 100%;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%); }
 
 #scene {
   height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
   background-color: red; }
-
-#scene-container {
-  height: 100%;
-  width: 100%; }
 
 #welcome {
   background-color: #000; }
 
 #welcome-message {
   text-align: center; }
-
-#welcome-message h2 {
-  animation-name: fadeUp;
-  animation-duration: 1s; }
 
 @keyframes fadeUp {
   0% {
@@ -336,6 +339,10 @@ input {
   100% {
     transform: translateY(0%);
     opacity: 1; } }
+
+.fade-up {
+  animation-name: fadeUp;
+  animation-duration: 1s; }
 
 @keyframes fadeRight {
   0% {
@@ -438,8 +445,9 @@ label {
   line-height: 1em;
   margin-bottom: 16px;
   margin-left: 8px;
-  position: absolute;
-  transition-duration: 0.3s; }
+  position: relative;
+  transition-duration: 0.3s;
+  display: none; }
 
 input, textarea {
   width: calc(100% - 16px);
