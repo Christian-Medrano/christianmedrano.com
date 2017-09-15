@@ -1,49 +1,52 @@
-// layering
-#hud {
-	z-index: 4;
-}
-#blurb{
-	z-index: 3;
-}
-#welcome {
-	z-index: 2;
-}
-.scene-overlay{
-	z-index: 1;
-}
-#scene-container {
-	z-index: 0;
+body{
+	overflow: hidden;
 }
 
-// modal
-.modal{
-	z-index: 6;
-	padding: 30px;
+
+.deck {
+	width: calc(100vw * 3);
+	height: calc(100vh * 2);
+	background-color: #efefef;
+	position: fixed;
+	top: 0;
+	transform: translateX(-33.3333333333%);
+	transition-duration: 1s;
+}
+
+.view-left {
+	transform: translateX(0%);
+}
+.view-right {
+	transform: translateX(-66.6666666666%);
+}
+.view-bottom {
+	transform: translate(-33.3333333333%, -50%);
+}
+
+.panel {
+	padding: 64px;
+	height: calc(100vh - 128px);
+	width: calc(100vw - 128px);
 	position: absolute;
-	display: block;
-	display: none;
-	height: 75%;
-	width: 50%;
-}
-.modal-bar {
-	padding-bottom: 30px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.modal-container{
-	width: 100%;
-	max-height: calc(100% - 60px);
-	overflow: auto;
-}
-#modal-dimmer{
-	z-index: 5;
-	background-color: rgba(0, 0, 0, 0.85);
-	display: none;
 }
 
-@media only screen and (max-width: 415px){
-	.modal{
-		width: calc(100% - 40px);
-	}
+.home{
+	top: 0;
+	left: 100vw;
+	background-color: #999;
+}
+.resume{
+	top: 0;
+	left: 0;
+	background-color: #777;
+}
+.portfolio{
+	top: 0;
+	right: 0;
+	background-color: #777;
+}
+.contact{
+	bottom: 0;
+	left: 100vw;
+	background-color: #777;
 }

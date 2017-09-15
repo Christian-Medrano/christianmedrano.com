@@ -1,0 +1,68 @@
+.nav{
+	z-index: 100;
+	top: 0;
+	left: 100vw;
+}
+
+.nav-left .nav-arrow svg, .nav-right .nav-arrow svg{
+	
+}
+
+.nav-left, .nav-right{
+	cursor: pointer;
+	height: 100%;
+	width: 32px;
+	position: absolute;
+	top: 0;
+	padding: 0px 16px;
+	display: flex;
+	align-items: center;
+	transition-duration: 1s;
+}
+.nav-right{
+	right: 0;
+}
+.nav-left{
+	left: 0;
+}
+.nav-bottom{
+	cursor: pointer;
+	height: 32px;
+	width: 100vw;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	padding: 16px 0;
+	transition-duration: 1s;
+}
+
+.nav-arrow, .nav-left-return, 
+.nav-left-return .nav-arrow,
+.nav-right-return, .nav-right-return .nav-arrow,
+.nav-bottom-return, .nav-bottom-return .nav-arrow {
+	transition-duration: 1s;
+}
+
+
+.nav-left-return{
+	transform: translateX(-100%);
+}
+.nav-left-return .nav-arrow{
+	transform: rotate(180deg);
+}
+
+.nav-right-return{
+	transform: translateX(100%);
+}
+.nav-right-return .nav-arrow{
+	transform: rotate(180deg);
+}
+
+.nav-bottom-return{
+	transform: translateY(100%);
+}
+.nav-bottom-return .nav-arrow{
+	transform: rotate(180deg);
+}
