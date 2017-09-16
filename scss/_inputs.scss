@@ -1,0 +1,51 @@
+input, textarea{
+	border:none;
+	outline: none;
+	background: transparent;
+}
+
+input, textarea{
+	border-bottom: 3px solid #000;
+	padding: 8px;
+	font-family: $font-sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	transition-duration: 0.5s;
+	width: 390px;
+}
+
+input:focus, textarea:focus{
+	border-bottom: 3px solid $color-brand;
+	padding: 16px 8px;
+	font-family: $font-sans-serif;
+	font-size: 16px;
+	transition-duration: 0.5s;
+}
+
+input:valid, textarea:valid{
+	border-bottom: 3px solid lime;
+	transition-duration: 0.5s;
+}
+
+button {
+	cursor: pointer;
+	color: black;
+	border: 3px solid #000;
+	background: transparent;
+	font-family: $font-sans-serif;
+	font-size: 1em;
+	font-weight: 500;
+	padding: 16px;
+	min-width: 100px;
+	text-transform: uppercase;
+	transition-duration: 0.5s;
+}
+button:hover{
+	background-color: #000;
+	color: #fff;
+	transition-duration: 0.5s;
+}
+button:active{
+	color: #777;
+	transition-duration: 0s;
+}

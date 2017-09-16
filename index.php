@@ -1,9 +1,17 @@
 <?php require_once 'header.php'; ?>
 
+<div id="background" class="background">
+	<img src="img/bg.jpg" alt="">
+	<div id="backround-overlay" class="background-overlay"></div>
+</div>
+
 <div id="deck" class="deck">
 
 	<!-- navigation -->
-	<div id="nav" class="nav panel">
+	
+	<!-- home -->
+	<div id="home" class="home panel">
+		<!-- arrow navigation -->
 		<div id="nav-left" class="nav-left">
 			<div class="nav-arrow">
 				<?php include 'img/ui/nav-arrow-left.php'; ?>
@@ -21,11 +29,18 @@
 				<?php include 'img/ui/nav-arrow-bottom.php'; ?>
 			</div>
 		</div>
-	</div>
-	
-	<!-- home -->
-	<div id="home" class="home panel">
-		this is the homepage
+
+		<div class="center text-center">
+			<h2>Elegant Design Solutions By</h2>
+			<h1>Christian Mikhael</h1>
+			<div class="social-media">
+				<a href="http://www.linkedin.com/christianmedrano"><img src="img/ui/linkedin.png" alt="Behance Link" class="sm-icon"></a>
+				<a href="http://www.behance.net/christianmedrano"><img src="img/ui/behance.png" alt="Behance Link" class="sm-icon"></a>
+				<a href="https://github.com/Christian-Medrano"><img src="img/ui/github.png" alt="Behance Link" class="sm-icon"></a>
+				<a href="https://github.com/Christian-Medrano"><img src="img/ui/facebook.png" alt="Behance Link" class="sm-icon"></a>
+				<a href="https://github.com/Christian-Medrano"><img src="img/ui/instagram.png" alt="Behance Link" class="sm-icon"></a>
+			</div>
+		</div>
 	</div>
 
 	<!-- resume -->

@@ -2,11 +2,9 @@ body{
 	overflow: hidden;
 }
 
-
 .deck {
 	width: calc(100vw * 3);
 	height: calc(100vh * 2);
-	background-color: #efefef;
 	position: fixed;
 	top: 0;
 	transform: translateX(-33.3333333333%);
@@ -24,29 +22,55 @@ body{
 }
 
 .panel {
-	padding: 64px;
-	height: calc(100vh - 128px);
-	width: calc(100vw - 128px);
-	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
 }
 
 .home{
+	z-index: 100;
 	top: 0;
 	left: 100vw;
-	background-color: #999;
+}
+.social-media{
+	display: flex;
+	justify-content: center;
+}
+.sm-icon{
+	height: 32px;
+	padding: 16px;
 }
 .resume{
 	top: 0;
 	left: 0;
-	background-color: #777;
 }
 .portfolio{
 	top: 0;
 	right: 0;
-	background-color: #777;
 }
 .contact{
 	bottom: 0;
 	left: 100vw;
-	background-color: #777;
+}
+
+.background{
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+.background img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.background-overlay{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.75);
 }

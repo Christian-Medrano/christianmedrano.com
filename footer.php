@@ -4,13 +4,13 @@
 <script src="js/parallax.min.js"></script>
 <script src="js/functions.js"></script>
 <!-- Parallax Scene Initialization -->
-<script>
+<!-- <script>
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene, {
 	// originX: 0,
 	// originY: 0,
 	limitY: 0
 });
-</script>
+</script> -->
 </body>
 </html>

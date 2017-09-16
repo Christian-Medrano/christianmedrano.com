@@ -55,13 +55,110 @@ table {
  *
  * @see https://www.sitepoint.com/building-linear-gradient-mixin-sass/
  */
+::selection {
+  color: white;
+  background-color: red; }
+
+.center {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%); }
+
+.text-center {
+  text-align: center; }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 100;
+  src: url("fonts/PangramSans/Pangram-ExtraLight.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 200;
+  src: url("fonts/PangramSans/Pangram-Light.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 300;
+  src: url("fonts/PangramSans/Pangram-Regular.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 400;
+  src: url("fonts/PangramSans/Pangram-Medium.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 500;
+  src: url("fonts/PangramSans/Pangram-Bold.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 600;
+  src: url("fonts/PangramSans/Pangram-ExtraBold.otf"); }
+
+@font-face {
+  font-family: "Pangram Sans";
+  font-weight: 700;
+  src: url("fonts/PangramSans/Pangram-Black.otf"); }
+
+h1 {
+  color: #000;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 5em;
+  text-transform: uppercase;
+  margin-bottom: 0.1em; }
+
+h2 {
+  color: #000;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 3.5em; }
+
+h3 {
+  color: #000;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  margin-bottom: 10px; }
+
+h4 {
+  color: #000;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1em; }
+
+h5 {
+  color: #000;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 2em; }
+
+h6 {
+  color: #000;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  line-height: 1em; }
+
+p {
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 200;
+  color: #fff;
+  line-height: 1.5em; }
+
+input {
+  font-family: "Pangram Sans", Helvetica, sans-serif; }
+
 body {
   overflow: hidden; }
 
 .deck {
   width: calc(100vw * 3);
   height: calc(100vh * 2);
-  background-color: #efefef;
   position: fixed;
   top: 0;
   transform: translateX(-33.33333%);
@@ -77,35 +174,55 @@ body {
   transform: translate(-33.33333%, -50%); }
 
 .panel {
-  padding: 64px;
-  height: calc(100vh - 128px);
-  width: calc(100vw - 128px);
-  position: absolute; }
+  height: 100vh;
+  width: 100vw;
+  position: fixed; }
 
 .home {
-  top: 0;
-  left: 100vw;
-  background-color: #999; }
-
-.resume {
-  top: 0;
-  left: 0;
-  background-color: #777; }
-
-.portfolio {
-  top: 0;
-  right: 0;
-  background-color: #777; }
-
-.contact {
-  bottom: 0;
-  left: 100vw;
-  background-color: #777; }
-
-.nav {
   z-index: 100;
   top: 0;
   left: 100vw; }
+
+.social-media {
+  display: flex;
+  justify-content: center; }
+
+.sm-icon {
+  height: 32px;
+  padding: 16px; }
+
+.resume {
+  top: 0;
+  left: 0; }
+
+.portfolio {
+  top: 0;
+  right: 0; }
+
+.contact {
+  bottom: 0;
+  left: 100vw; }
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -100; }
+
+.background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.background-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.75); }
 
 .nav-left, .nav-right {
   cursor: pointer;
@@ -160,91 +277,49 @@ body {
 .nav-bottom-return .nav-arrow {
   transform: rotate(180deg); }
 
-@font-face {
-  font-family: "Pangram Sans";
-  font-weight: 100;
-  src: url("fonts/PangramSans/Pangram-ExtraLight.otf"); }
+input, textarea {
+  border: none;
+  outline: none;
+  background: transparent; }
 
-@font-face {
-  font-family: "Pangram Sans";
-  font-weight: 200;
-  src: url("fonts/PangramSans/Pangram-Light.otf"); }
-
-@font-face {
-  font-family: "Pangram Sans";
+input, textarea {
+  border-bottom: 3px solid #000;
+  padding: 8px;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 16px;
   font-weight: 300;
-  src: url("fonts/PangramSans/Pangram-Regular.otf"); }
+  transition-duration: 0.5s;
+  width: 390px; }
 
-@font-face {
-  font-family: "Pangram Sans";
-  font-weight: 400;
-  src: url("fonts/PangramSans/Pangram-Medium.otf"); }
+input:focus, textarea:focus {
+  border-bottom: 3px solid red;
+  padding: 16px 8px;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  transition-duration: 0.5s; }
 
-@font-face {
-  font-family: "Pangram Sans";
+input:valid, textarea:valid {
+  border-bottom: 3px solid lime;
+  transition-duration: 0.5s; }
+
+button {
+  cursor: pointer;
+  color: black;
+  border: 3px solid #000;
+  background: transparent;
+  font-family: "Pangram Sans", Helvetica, sans-serif;
+  font-size: 1em;
   font-weight: 500;
-  src: url("fonts/PangramSans/Pangram-Bold.otf"); }
-
-@font-face {
-  font-family: "Pangram Sans";
-  font-weight: 600;
-  src: url("fonts/PangramSans/Pangram-ExtraBold.otf"); }
-
-@font-face {
-  font-family: "Pangram Sans";
-  font-weight: 700;
-  src: url("fonts/PangramSans/Pangram-Black.otf"); }
-
-h1 {
-  color: #000;
-  font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 5em;
+  padding: 16px;
+  min-width: 100px;
   text-transform: uppercase;
-  margin-bottom: 0.1em; }
+  transition-duration: 0.5s; }
 
-h2 {
-  color: #000;
-  font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 4em; }
-
-h3 {
-  color: #000;
-  font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 1em;
-  margin-bottom: 10px; }
-
-h4 {
-  color: #000;
-  font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-weight: 200;
-  font-size: 1em; }
-
-h5 {
-  color: #000;
-  font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-weight: 200;
-  font-size: 2em; }
-
-h6 {
-  color: #000;
-  font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-weight: 200;
-  font-size: 1em;
-  line-height: 1em; }
-
-p {
-  font-family: "Pangram Sans", Helvetica, sans-serif;
-  font-size: 1em;
-  font-weight: 200;
+button:hover {
+  background-color: #000;
   color: #fff;
-  line-height: 1.5em; }
+  transition-duration: 0.5s; }
 
-@media only screen and (max-width: 415px) {
-  h1 {
-    font-size: 3em; } }
-
-input {
-  font-family: "Pangram Sans", Helvetica, sans-serif; }
+button:active {
+  color: #777;
+  transition-duration: 0s; }
