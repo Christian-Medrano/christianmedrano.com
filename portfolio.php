@@ -5,8 +5,10 @@
 
 	$coverSize = "404";
  ?>
-
+<div class="window">
+<img class="behance-badge" src="img/behance-badge.svg" alt="Powered by Behance">
 <div class="projects">
+
 	<?php 
 		if (isset($data)) {
 			foreach ($data->projects as $project) {
@@ -57,4 +59,5 @@
 			}
 		}
 	 ?>
+</div>
 </div>

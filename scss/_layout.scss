@@ -55,6 +55,7 @@ body{
 	left: 100vw;
 }
 
+
 .background{
 	height: 100vh;
 	width: 100vw;
@@ -75,4 +76,10 @@ body{
 	top: 0;
 	left: 0;
 	background-color: rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (max-width: 415px){
+	.contact .center{
+		width: 90%;
+	}
 }

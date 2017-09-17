@@ -39,7 +39,8 @@ $(document).ready(function(){
 	    var form = $('#ajax-contact');
 
 	    // Get the messages div.
-	    var formMessages = $('#form-alerts');
+	    var formMessages = $('#form-alert-text');
+	    var formAlert = $('#form-alert');
 
 	    // Set up an event listener for the contact form.
 	    $(form).submit(function(event) {
@@ -56,8 +57,8 @@ $(document).ready(function(){
 	            data: formData
 	        }).done(function(response) {
 			    // Make sure that the formMessages div has the 'success' class.
-			    $(formMessages).removeClass('error');
-			    $(formMessages).addClass('success');
+			    $(formAlert).removeClass('error');
+			    $(formAlert).addClass('success');
 
 			    // Set the message text.
 			    $(formMessages).text(response);
@@ -68,8 +69,8 @@ $(document).ready(function(){
 			    $('#message').val('');
 			}).fail(function(data) {
 			    // Make sure that the formMessages div has the 'error' class.
-			    $(formMessages).removeClass('success');
-			    $(formMessages).addClass('error');
+			    $(formAlert).removeClass('success');
+			    $(formAlert).addClass('error');
 
 			    // Set the message text.
 			    if (data.responseText !== '') {

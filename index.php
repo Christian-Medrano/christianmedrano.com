@@ -5,6 +5,13 @@
 	<div id="backround-overlay" class="background-overlay"></div>
 </div>
 
+<div id="form-alert" class="form-alert">
+	<p id="form-alert-text" class="form-alert-text"></p>
+	<div class="hide-form-alert">
+		| <img src="img/ui/close-button.png" alt="hide notification">
+	</div>
+</div>
+
 <div id="deck" class="deck">
 
 	<!-- navigation -->

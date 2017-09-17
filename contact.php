@@ -1,12 +1,12 @@
 <?php 
 	require_once "recaptchalib.php";
 ?>
-	<div id="form-alerts"></div>
 
 	<div class="center">
-		<h1>Say Hello</h1>
+		
 
 		<form id="ajax-contact" method="post" action="submit.php">
+			<h1>Say Hello</h1>
 			<div class="field">
 				<input name="name" id="name-input" placeholder="Name" required>
 			</div>
