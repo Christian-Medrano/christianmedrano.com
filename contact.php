@@ -21,7 +21,8 @@
 			<br>
 
 			<div class="field">
-				<textarea name="message" id="message-input" rows="5" cols="30" placeholder="Message"  required></textarea>
+				<textarea name="message" id="message-input" rows="5" cols="30" placeholder="Message" minlength="25" required></textarea>
+				<p class="text-right"><small>30 character minimum</small></p>
 			</div>
 
 			<br>

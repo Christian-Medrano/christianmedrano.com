@@ -50,7 +50,7 @@
 
 	<!-- portfolio -->
 	<div id="portfolio" class="portfolio panel">
-		<?php include 'portfolio.php'; ?>
+		<?php include 'portfolio.php'; ?>		
 	</div>
 
 	<!-- contact -->

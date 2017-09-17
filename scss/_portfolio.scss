@@ -1,0 +1,76 @@
+.projects{
+	max-height: calc(100% - 128px);
+	width: calc(100% - 128px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 64px;
+}
+.project{
+	width: 300px;
+	// background-color: rgba(0, 0, 0, 0.5);
+	margin: 0.5px;
+	margin-bottom: 30px;
+}
+.project img{
+	width: 100%;
+	object-fit: contain;
+}
+.project-cap{
+	position: relative;
+	margin-bottom: 8px;
+}
+.cap-overlay button{
+	min-width: 80%;
+}
+.cap-overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.75);
+	opacity: 0;
+	transition-duration: 0.3s;
+}
+
+.cap-overlay:hover{
+	opacity: 1;
+	transition-duration: 0.3s;
+}
+.fields {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.fields li {
+	margin: 0;
+}
+.fields li small:after{
+	content: ', ';
+}
+.fields li:last-child small:after{
+	content: '';
+}
+
+.stats {
+	position: relative;
+	display: flex;
+}
+.stat{
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-right: 16px;
+}
+.stat img{
+	height: 16px;
+}
+
+@media only screen and (max-width: 415px){
+	.project{
+		width: 100%;
+	}
+}
