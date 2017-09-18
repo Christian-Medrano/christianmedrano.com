@@ -6,8 +6,15 @@ input, textarea{
 textarea{
 	resize: none;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
 
 .field{
+	position: relative;
 	width: 100%;
 }
 
@@ -23,7 +30,6 @@ input, textarea{
 
 input:focus, textarea:focus{
 	border-bottom: 3px solid $color-brand;
-	padding: 16px 8px;
 	font-family: $font-sans-serif;
 	font-size: 16px;
 	transition-duration: 0.5s;
@@ -32,6 +38,20 @@ input:focus, textarea:focus{
 input:valid, textarea:valid{
 	border-bottom: 3px solid lime;
 	transition-duration: 0.5s;
+	padding-top: 32px;
+}
+
+label{
+	z-index: -1;
+	padding: 8px;
+	font-size: 16px;
+	position: absolute;
+	top: 0;
+	margin-top: 4px;
+}
+.input-clicked{
+	padding-top: 32px;
+	transition-duration: 0.3s;
 }
 
 button {

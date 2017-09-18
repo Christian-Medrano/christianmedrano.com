@@ -48,13 +48,13 @@ h2 {
 	color: #000;
 	font-family: $font-sans-serif;
 	font-weight: 100;
-	font-size: 3.5em;
+	font-size: 3em;
 }
 h3 {
 	color: #000;
 	font-family: $font-sans-serif;
 	font-weight: 300;
-	font-size: 1em;
+	font-size: 1.25em;
 	margin-bottom: 10px;
 }
 h4 {
@@ -102,6 +102,10 @@ small{
 
 input {
 	font-family: $font-sans-serif;
+}
+label{
+	font-family: $font-serif;
+	font-style: italic;
 }
 
 a:link, a:visited, a:hover{

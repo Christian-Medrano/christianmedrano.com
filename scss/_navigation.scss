@@ -1,23 +1,40 @@
+.nav-arrow svg{
+	width: 24px;
+}
+.nav-bottom .nav-arrow svg{
+	width: unset;
+	height: 24px;
+}
+
 .nav-left, .nav-right{
 	cursor: pointer;
 	height: 100%;
-	width: 32px;
+	width: 24px;
 	position: absolute;
 	top: 0;
 	padding: 0px 16px;
 	display: flex;
 	align-items: center;
-	transition-duration: 1s;
+	transition-duration: 0.3s;
 }
 .nav-right{
 	right: 0;
 }
+.nav-right:hover{
+	padding-right: 0;
+	padding-left: 32px;
+	transition-duration: 0.3s;
+}
 .nav-left{
 	left: 0;
 }
+.nav-left:hover{
+	padding-left: 0;
+	padding-right: 32px;
+}
 .nav-bottom{
 	cursor: pointer;
-	height: 32px;
+	height: 24px;
 	width: 100vw;
 	position: absolute;
 	bottom: 0;
@@ -25,19 +42,56 @@
 	display: flex;
 	justify-content: center;
 	padding: 16px 0;
-	transition-duration: 1s;
+	transition-duration: 0.3s;
+}
+.nav-bottom:hover{
+	padding-bottom: 0;
+	padding-top: 32px
 }
 
 .nav-arrow, .nav-left-return, 
 .nav-left-return .nav-arrow,
 .nav-right-return, .nav-right-return .nav-arrow,
 .nav-bottom-return, .nav-bottom-return .nav-arrow {
-	transition-duration: 1s;
+	transition-duration: 0.3s;
+}
+
+.nav-caption{
+	transition-duration: 0.3s;
+	position: absolute;
+	text-align: center;
+	opacity: 0;
+}
+
+.nav-right-caption{
+	transform: rotate(90deg);
+	left: -16px;
+}
+.nav-right:hover .nav-right-caption, .nav-bottom:hover .nav-bottom-caption{
+	opacity: 1;
+	transition-duration: 0.3s;
+}
+.nav-bottom-caption{
+	top: 0px;
 }
 
 
+
+
+.nav-right-return:hover .nav-right-caption, .nav-bottom-return:hover .nav-bottom-caption {
+	opacity: 0;
+}
+
+
+
+// return states
+
 .nav-left-return{
 	transform: translateX(-100%);
+}
+.nav-left-return:hover{
+	padding-right: 0;
+	padding-left: 32px;
 }
 .nav-left-return .nav-arrow{
 	transform: rotate(180deg);
@@ -46,12 +100,20 @@
 .nav-right-return{
 	transform: translateX(100%);
 }
+.nav-right-return:hover{
+	padding-left: 0;
+	padding-right: 32px;
+}
 .nav-right-return .nav-arrow{
 	transform: rotate(180deg);
 }
 
 .nav-bottom-return{
 	transform: translateY(100%);
+}
+.nav-bottom-return:hover{
+	padding-top: 0;
+	padding-bottom: 32px;
 }
 .nav-bottom-return .nav-arrow{
 	transform: rotate(180deg);

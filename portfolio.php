@@ -36,24 +36,24 @@
 				// Fields
 				echo '<ul class="fields">';
 				foreach ($project->fields as $field) {
-					echo '<li><h3>&nbsp;<small>'.$field.'</small></h3></li>';
+					echo '<li><p>&nbsp;<small>'.$field.'</small></p></li>';
 				}
 				echo '</ul>';
-				// Stats
-				echo '<div class="stats">';
-				// views
-				echo '<div class="stat">';
-				echo '<img src="img/ui/views.png"><h6>'.$projectViews.'</h6>';
-				echo '</div>';
-				// likes
-				echo '<div class="stat">';
-				echo '<img src="img/ui/likes.png"><h6>'.$projectLikes.'</h6>';
-				echo '</div>';
-				// comments
-				echo '<div class="stat">';
-				echo '<img src="img/ui/comments.png"><h6>'.$projectComments.'</h6>';
-				echo '</div>';
-				echo '</div>'; // Close stats
+				// // Stats
+				// echo '<div class="stats">';
+				// // views
+				// echo '<div class="stat">';
+				// echo '<img src="img/ui/views.png"><h6>'.$projectViews.'</h6>';
+				// echo '</div>';
+				// // likes
+				// echo '<div class="stat">';
+				// echo '<img src="img/ui/likes.png"><h6>'.$projectLikes.'</h6>';
+				// echo '</div>';
+				// // comments
+				// echo '<div class="stat">';
+				// echo '<img src="img/ui/comments.png"><h6>'.$projectComments.'</h6>';
+				// echo '</div>';
+				// echo '</div>'; // Close stats
 				echo '</div>'; // Close Project Info
 				echo '</div>'; // Close Project
 			}

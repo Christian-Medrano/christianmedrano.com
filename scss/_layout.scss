@@ -32,6 +32,11 @@ body{
 	top: 0;
 	left: 100vw;
 }
+.blurb{
+	width: calc(100% - 128px);
+	overflow: hidden;
+	display: hidden;
+}
 .social-media{
 	display: flex;
 	justify-content: center;

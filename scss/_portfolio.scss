@@ -23,7 +23,7 @@
 	width: 300px;
 	// background-color: rgba(0, 0, 0, 0.5);
 	margin: 0.5px;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 }
 .project img{
 	width: 100%;
@@ -53,6 +53,7 @@
 .fields {
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 8px;
 }
 
 .fields li {

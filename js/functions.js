@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-	var atHome = true;
-
 	// set date for welcome message
 	var d = new Date();
 	var n = d.getHours();
@@ -15,6 +13,9 @@ $(document).ready(function(){
 	} else {
 		$('#welcome-message').text('Hello');
 	}
+
+	// intro animation
+	$('.blurb').fadeIn(1000);
 
 	// navigation
 	$('#nav-left').click(function(){
@@ -30,6 +31,16 @@ $(document).ready(function(){
 	$('#nav-bottom').click(function(){
 		$('#deck').toggleClass('view-bottom');
 		$('#nav-bottom').toggleClass('nav-bottom-return');
+	});
+
+	// form alert
+	$('#hide-form-alert').click(function(){
+		$('#form-alert').slideToggle();
+	});
+
+	// stick labels
+	$('.input').click(function(){
+		$(this).addClass('input-clicked');
 	});
 
 	// AJAX email
@@ -67,6 +78,7 @@ $(document).ready(function(){
 			    $('#name').val('');
 			    $('#email').val('');
 			    $('#message').val('');
+			    $('.input').removeClass('input-clicked');
 			}).fail(function(data) {
 			    // Make sure that the formMessages div has the 'error' class.
 			    $(formAlert).removeClass('success');
