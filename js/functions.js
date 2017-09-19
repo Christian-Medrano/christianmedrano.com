@@ -6,16 +6,17 @@ $(document).ready(function(){
 
 	if (n < 12){
 		$('#welcome-message').text('Good Morning');
-	} else if (n > 12 && n < 18) {
+	} else if (n >= 12 && n < 18) {
 		$('#welcome-message').text('Good Afternoon');
-	} else if (n > 18) {
+	} else if (n >= 18) {
 		$('#welcome-message').text('Good Evening');
 	} else {
 		$('#welcome-message').text('Hello');
 	}
 
-	// intro animation
-	$('.blurb').fadeIn(1000);
+	// animate welcome
+	$('#welcome-message').addClass('fadeUp');
+	$('#welcome').delay(3000).fadeOut(1000);
 
 	// navigation
 	$('#nav-left').click(function(){
@@ -33,9 +34,51 @@ $(document).ready(function(){
 		$('#nav-bottom').toggleClass('nav-bottom-return');
 	});
 
+	// Mobile Menu Toggling
+	$('#menu-icon').click(function(){
+		$('#menu-icon').toggleClass('menu-icon-open');
+		$('#menu-links').slideToggle(300);
+	});
+
+	function clearClasses() {
+		$('#menu-icon').toggleClass('menu-icon-open');
+		$('#deck').removeClass('view-left');
+		$('#deck').removeClass('view-right');
+		$('#deck').removeClass('view-bottom');
+		$('#nav-right').removeClass('nav-right-return');
+		$('#nav-left').removeClass('nav-left-return');
+		$('#nav-bottom').removeClass('nav-bottom-return');
+	}
+
+	$('#menu-home').click(function(){
+		clearClasses();
+		$('#menu-links').slideToggle(300);
+	});
+
+	$('#menu-contact').click(function(){
+		clearClasses();
+		$('#menu-links').slideToggle(300);
+		$('#deck').toggleClass('view-bottom');
+		$('#nav-bottom').toggleClass('nav-bottom-return');
+	});
+
+	$('#menu-portfolio').click(function(){
+		clearClasses();
+		$('#menu-links').slideToggle(300);
+		$('#deck').toggleClass('view-right');
+		$('#nav-right').toggleClass('nav-right-return');
+	});
+
+	$('#menu-resume').click(function(){
+		clearClasses();
+		$('#menu-links').slideToggle(300);
+		$('#deck').toggleClass('view-left');
+		$('#nav-left').toggleClass('nav-left-return');
+	});
+
 	// form alert
 	$('#hide-form-alert').click(function(){
-		$('#form-alert').slideToggle();
+		$('#form-alert').slideToggle(300);
 	});
 
 	// stick labels

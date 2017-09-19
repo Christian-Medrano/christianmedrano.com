@@ -2,10 +2,45 @@ body{
 	overflow: hidden;
 }
 
+// Grid
+.col-12{
+	width: 100%;
+}
+.col-10{
+	width: 83.33333%;
+}
+.col-8{
+	width: 66.66666%;
+}
+.col-6{
+	width: 50%;
+}
+.col-4{
+	width: 33.33333%;
+}
+.col-2{
+	width: 16.66666%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .deck {
 	width: calc(100vw * 3);
 	height: calc(100vh * 2);
-	position: fixed;
+	position: absolute;
 	top: 0;
 	transform: translateX(-33.3333333333%);
 	transition-duration: 1s;
@@ -35,7 +70,18 @@ body{
 .blurb{
 	width: calc(100% - 128px);
 	overflow: hidden;
-	display: hidden;
+	opacity: 0;
+	animation-delay: 3s;
+	animation-name: fadeIn;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.blurb-content{
+	opacity: 0;
+	animation-delay: 2s;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
 .social-media{
 	display: flex;

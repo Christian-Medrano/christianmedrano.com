@@ -1,5 +1,23 @@
 <?php require_once 'header.php'; ?>
 
+<div id="welcome" class="welcome">
+	<div id="welcome-message" class="welcome-message center"></div>
+</div>
+
+<div id="menu" class="menu">
+	<div id="menu-icon" class="menu-icon">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<ul id="menu-links" class="menu-links">
+		<li id="menu-home" class="menu-link">Home</li>
+		<li id="menu-portfolio" class="menu-link">Portfolio</li>
+		<li id="menu-resume" class="menu-link">Résumé</li>
+		<li id="menu-contact" class="menu-link">Contact</li>
+	</ul>
+</div>
+
 <div id="background" class="background">
 	<img src="img/bg.jpg" alt="">
 	<div id="backround-overlay" class="background-overlay"></div>
@@ -44,19 +62,18 @@
 		</div>
 
 		<div id="blurb" class="blurb center text-center">
-			<h2>Elegant Design Solutions by</h2>
-			<h1>Christian Mikhael</h1>
-			<div class="social-media">
-				<a href="http://www.linkedin.com/christianmedrano"><img src="img/ui/linkedin.png" alt="Behance Link" class="sm-icon"></a>
-				<a href="http://www.behance.net/christianmedrano"><img src="img/ui/behance.png" alt="Behance Link" class="sm-icon"></a>
-				<a href="https://github.com/Christian-Medrano"><img src="img/ui/github.png" alt="Behance Link" class="sm-icon"></a>
-				<a href="https://github.com/Christian-Medrano"><img src="img/ui/facebook.png" alt="Behance Link" class="sm-icon"></a>
-				<a href="https://github.com/Christian-Medrano"><img src="img/ui/instagram.png" alt="Behance Link" class="sm-icon"></a>
+			<div id="blurb-content" class="blurb-content">
+				<h2>Elegant Design Solutions by</h2>
+				<h1>Christian Mikhael</h1>
+				<div class="social-media">
+					<a href="http://www.linkedin.com/christianmedrano" target="_blank"><img src="img/ui/linkedin.png" alt="Behance Link" class="sm-icon"></a>
+					<a href="http://www.behance.net/christianmedrano" target="_blank"><img src="img/ui/behance.png" alt="Behance Link" class="sm-icon"></a>
+					<a href="https://github.com/Christian-Medrano" target="_blank"><img src="img/ui/github.png" alt="Behance Link" class="sm-icon"></a>
+					<a href="https://github.com/Christian-Medrano" target="_blank"><img src="img/ui/facebook.png" alt="Behance Link" class="sm-icon"></a>
+					<a href="https://github.com/Christian-Medrano" target="_blank"><img src="img/ui/instagram.png" alt="Behance Link" class="sm-icon"></a>
+				</div>
 			</div>
-			<!-- welcome animation -->
-			<!-- <div id="welcome" class="welcome">
-				<div id="welcome-message" class="center"></div>
-			</div> -->
+			<!-- welcome intro -->
 		</div>
 	</div>
 

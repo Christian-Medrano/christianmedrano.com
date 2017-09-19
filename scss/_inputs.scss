@@ -38,7 +38,6 @@ input:focus, textarea:focus{
 input:valid, textarea:valid{
 	border-bottom: 3px solid lime;
 	transition-duration: 0.5s;
-	padding-top: 32px;
 }
 
 label{
@@ -50,7 +49,7 @@ label{
 	margin-top: 4px;
 }
 .input-clicked{
-	padding-top: 32px;
+	margin-top: 32px;
 	transition-duration: 0.3s;
 }
 

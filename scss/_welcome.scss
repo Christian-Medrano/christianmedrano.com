@@ -1,11 +1,19 @@
 .welcome{
-	position: absolute;
+	z-index: 101;
+	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
 	display: flex;
-	background-color: #000;
-	color: white;
-	animation: swipeRight 5s forwards;
+	background-color: #fff;
+	animation: fadeOut 1s 2s forward;
+}
+.welcome-message{
+	color: #000;
+	font-family: $font-serif;
+	font-style: italic;
+	font-size: 2em;
+	opacity: 0;
+	text-align: center;
 }

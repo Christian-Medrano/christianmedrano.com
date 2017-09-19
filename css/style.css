@@ -238,10 +238,28 @@ a:link, a:visited, a:hover {
 body {
   overflow: hidden; }
 
+.col-12 {
+  width: 100%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-8 {
+  width: 66.66666%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-2 {
+  width: 16.66666%; }
+
 .deck {
   width: calc(100vw * 3);
   height: calc(100vh * 2);
-  position: fixed;
+  position: absolute;
   top: 0;
   transform: translateX(-33.33333%);
   transition-duration: 1s; }
@@ -268,7 +286,18 @@ body {
 .blurb {
   width: calc(100% - 128px);
   overflow: hidden;
-  display: hidden; }
+  opacity: 0;
+  animation-delay: 3s;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+.blurb-content {
+  opacity: 0;
+  animation-delay: 2s;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; }
 
 .social-media {
   display: flex;
@@ -421,6 +450,74 @@ body {
 .nav-bottom-return .nav-arrow {
   transform: rotate(180deg); }
 
+.menu {
+  z-index: 102;
+  position: fixed;
+  top: 16px;
+  right: 16px; }
+
+.menu-icon {
+  background-color: #000;
+  height: 32px;
+  width: 32px;
+  padding: 8px;
+  cursor: pointer; }
+
+.menu-icon span {
+  background-color: #fff;
+  width: 32px;
+  height: 4px;
+  position: absolute;
+  transition-duration: 0.3s; }
+
+.menu-icon span:nth-child(1) {
+  top: 12px; }
+
+.menu-icon span:nth-child(2) {
+  top: 22px; }
+
+.menu-icon span:nth-child(3) {
+  top: 32px; }
+
+.menu-icon-open span:nth-child(1) {
+  top: 22px;
+  transform: rotate(45deg); }
+
+.menu-icon-open span:nth-child(2) {
+  opacity: 0; }
+
+.menu-icon-open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 22px; }
+
+.menu-links {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background-color: #000;
+  padding: 16px;
+  display: none; }
+
+.menu-link {
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 16px;
+  font-style: italic;
+  width: 200px;
+  cursor: pointer;
+  padding: 16px;
+  border-bottom: 2px solid #333; }
+
+.menu-link:hover {
+  background-color: #333; }
+
+.menu-link:last-child {
+  border: none; }
+
+@media only screen and (max-width: 900px) {
+  .nav-left, .nav-right, .nav-bottom {
+    display: none; } }
+
 input, textarea {
   border: none;
   outline: none;
@@ -456,8 +553,7 @@ input:focus, textarea:focus {
 
 input:valid, textarea:valid {
   border-bottom: 3px solid lime;
-  transition-duration: 0.5s;
-  padding-top: 32px; }
+  transition-duration: 0.5s; }
 
 label {
   z-index: -1;
@@ -468,7 +564,7 @@ label {
   margin-top: 4px; }
 
 .input-clicked {
-  padding-top: 32px;
+  margin-top: 32px;
   transition-duration: 0.3s; }
 
 button {
@@ -503,28 +599,27 @@ button:active {
 
 .portfolio .window {
   position: relative;
-  height: calc(100% - 64px);
+  height: calc(100% - 96px);
   width: calc(100% - 96px);
   padding: 32px;
-  padding-left: 64px; }
+  padding-left: 64px;
+  padding-top: 64px; }
 
 .behance-badge {
   margin: 16px 0px; }
 
 .projects {
   max-height: calc(100% - 48px);
-  padding-right: 8px;
   max-width: calc(100% - 8px);
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap; }
 
 .project {
   width: 300px;
-  margin: 0.5px;
+  margin: 8px;
   margin-bottom: 32px; }
 
 .project img {
@@ -566,29 +661,80 @@ button:active {
   content: ''; }
 
 .stats {
-  position: relative;
-  display: flex; }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  padding: 8px;
+  border-radius: 8px 0 0 0; }
 
 .stat {
   position: relative;
   display: flex;
   align-items: center;
-  margin-right: 16px; }
+  margin-right: 8px;
+  color: #fff; }
+
+.stat:last-child {
+  margin-right: 0; }
 
 .stat img {
   height: 16px; }
 
-@media only screen and (max-width: 415px) {
+.stat h6 {
+  color: #fff; }
+
+@media only screen and (max-width: 900px) {
   .project {
-    width: 100%; } }
+    width: 100%; }
+  .portfolio .window {
+    position: relative;
+    height: calc(100% - 96px);
+    width: calc(100% - 64px);
+    padding: 32px;
+    padding-top: 64px; } }
+
+.resume .window {
+  position: relative;
+  height: calc(100% - 96px);
+  width: calc(100% - 96px);
+  padding: 32px;
+  padding-right: 64px;
+  padding-top: 64px; }
 
 .welcome {
-  position: absolute;
+  z-index: 101;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   display: flex;
-  background-color: #000;
-  color: white;
-  animation: swipeRight 5s forwards; }
+  background-color: #fff;
+  animation: fadeOut 1s 2s forward; }
+
+.welcome-message {
+  color: #000;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: italic;
+  font-size: 2em;
+  opacity: 0;
+  text-align: center; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 50%); }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); } }
+
+.fadeUp {
+  animation: fadeUp 1s 1s forwards; }

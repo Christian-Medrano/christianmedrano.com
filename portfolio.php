@@ -23,12 +23,34 @@
 				// Project Cap
 				echo '<a href="'.$projectUrl.'" target="blank">';
 				echo '<div class="project-cap">';
+
 				echo '<img src="'.$projectCover.'" alt="'.$projectName.'">';
+
+				// Stats
+				echo '<div class="stats">';
+				// views
+				echo '<div class="stat">';
+				echo '<img src="img/ui/views-light.png"><h6>'.$projectViews.'</h6>';
+				echo '</div>';
+				// likes
+				echo '<div class="stat">';
+				echo '<img src="img/ui/likes-light.png"><h6>'.$projectLikes.'</h6>';
+				echo '</div>';
+				// comments
+				echo '<div class="stat">';
+				echo '<img src="img/ui/comments-light.png"><h6>'.$projectComments.'</h6>';
+				echo '</div>';
+				echo '</div>'; // Close stats
+
+
+				// Cap Overlay
 				echo '<div class="cap-overlay">';
 				echo '<button class="btn-light center">Open in Behance</button>';
 				echo '</div>'; // Close Cap Overlay
+
 				echo '</div>'; // Close Image Cap
 				echo '</a>';
+
 				// Project Info
 				echo '<div class="project-info">';
 				// Project Name
@@ -39,22 +61,8 @@
 					echo '<li><p>&nbsp;<small>'.$field.'</small></p></li>';
 				}
 				echo '</ul>';
-				// // Stats
-				// echo '<div class="stats">';
-				// // views
-				// echo '<div class="stat">';
-				// echo '<img src="img/ui/views.png"><h6>'.$projectViews.'</h6>';
-				// echo '</div>';
-				// // likes
-				// echo '<div class="stat">';
-				// echo '<img src="img/ui/likes.png"><h6>'.$projectLikes.'</h6>';
-				// echo '</div>';
-				// // comments
-				// echo '<div class="stat">';
-				// echo '<img src="img/ui/comments.png"><h6>'.$projectComments.'</h6>';
-				// echo '</div>';
-				// echo '</div>'; // Close stats
 				echo '</div>'; // Close Project Info
+
 				echo '</div>'; // Close Project
 			}
 		}
