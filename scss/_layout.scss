@@ -2,40 +2,6 @@ body{
 	overflow: hidden;
 }
 
-// Grid
-.col-12{
-	width: 100%;
-}
-.col-10{
-	width: 83.33333%;
-}
-.col-8{
-	width: 66.66666%;
-}
-.col-6{
-	width: 50%;
-}
-.col-4{
-	width: 33.33333%;
-}
-.col-2{
-	width: 16.66666%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .deck {
 	width: calc(100vw * 3);
@@ -132,5 +98,80 @@ body{
 @media only screen and (max-width: 415px){
 	.contact .center{
 		width: 90%;
+	}
+}
+
+// responsive grid
+// Grid
+.container-fluid{
+	width: 100%;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.col-12{
+	width: 100%;
+}
+.col-10{
+	width: 83.33333%;
+}
+.col-8{
+	width: 66.66666%;
+}
+.col-6{
+	width: 50%;
+}
+.col-4{
+	width: 33.33333%;
+}
+.col-2{
+	width: 16.66666%;
+}
+
+
+@media only screen and (max-width: 768px){
+	.col-tb-12{
+		width: 100%;
+	}
+	.col-tb-10{
+		width: 83.33333%;
+	}
+	.col-tb-8{
+		width: 66.66666%;
+	}
+	.col-tb-6{
+		width: 50%;
+	}
+	.col-tb-4{
+		width: 33.33333%;
+	}
+	.col-tb-2{
+		width: 16.66666%;
+	}
+}
+
+@media only screen and (max-width: 415px){
+	.col-mb-12{
+		width: 100%;
+	}
+	.col-mb-10{
+		width: 83.33333%;
+	}
+	.col-mb-8{
+		width: 66.66666%;
+	}
+	.col-mb-6{
+		width: 50%;
+	}
+	.col-mb-4{
+		width: 33.33333%;
+	}
+	.col-mb-2{
+		width: 16.66666%;
 	}
 }
