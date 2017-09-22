@@ -19,10 +19,7 @@
 	flex-wrap: wrap;
 }
 .project{
-	width: 300px;
 	// background-color: rgba(0, 0, 0, 0.5);
-	margin: 8px;
-	margin-bottom: 32px;
 }
 .project img{
 	width: 100%;
@@ -69,10 +66,9 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	background-color: rgba(0, 0, 0, 0.75);
+	background-color: #000;
 	display: flex;
 	padding: 8px;
-	border-radius: 8px 0 0 0;
 }
 .stat{
 	position: relative;
@@ -85,16 +81,14 @@
 	margin-right: 0;
 }
 .stat img{
-	height: 16px;
+	height: 14px;
 }
 .stat h6{
 	color: #fff;
+	font-size: 14px;
 }
 
 @media only screen and (max-width: 900px){
-	.project{
-		width: 100%;
-	}
 	.portfolio .window{
 		position: relative;
 		height: calc(100% - 96px);

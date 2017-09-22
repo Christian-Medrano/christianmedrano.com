@@ -78,12 +78,21 @@ $(document).ready(function(){
 
 	// form alert
 	$('#hide-form-alert').click(function(){
-		$('#form-alert').slideToggle(300);
+		$('#form-alert').fadeOut(300);
 	});
 
-	// stick labels
-	$('.input').click(function(){
-		$(this).addClass('input-clicked');
+	$('.input').each(function(){
+		$(this).focus(function(){
+			$(this).addClass('raise-label');
+		});
+
+		$(this).blur(function(){
+			if($(this).val()!=""){
+		    	
+			}else{
+				$(this).removeClass('raise-label');
+			}
+		});
 	});
 
 	// AJAX email

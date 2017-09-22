@@ -8,7 +8,7 @@
 <div class="window">
 <img class="behance-badge" src="img/behance-badge.svg" alt="Powered by Behance">
 <div class="projects">
-
+	<div class="row">
 	<?php 
 		if (isset($data)) {
 			foreach ($data->projects as $project) {
@@ -19,7 +19,7 @@
 				$projectLikes = $project->stats->appreciations;
 				$projectComments = $project->stats->comments;
 
-				echo '<div class="project">';
+				echo '<div class="project col col-3 col-tb-4 col-mb-12 px-1">';
 				// Project Cap
 				echo '<a href="'.$projectUrl.'" target="blank">';
 				echo '<div class="project-cap">';
@@ -67,5 +67,6 @@
 			}
 		}
 	 ?>
+	 </div>
 </div>
 </div>

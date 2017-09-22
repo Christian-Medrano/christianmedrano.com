@@ -14,25 +14,28 @@
 .form-alert{
 	z-index: 1000;
 	position: fixed;
-	top: 16px;
-	left: 16px;
-	width: calc(100vw - 32px);
+	left: 0;
+	right: 0;
+	margin: 16px;
+	padding: 16px;
+	background-color: #000;
+	background-clip: padding-box;
+	border-sizing: border-box;
+	display: none;
+}
+.space-content{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #000;
-	display: none;
 }
 .form-alert-text{
 	color: #fff;
 	font-size: 16px;
 	line-height: 1em;
-	padding: 16px;
 }
 .hide-form-alert {
 	height: 16px;
 	width: 16px;
-	padding: 16px;
 	position: relative;
 	display: flex;
 	margin-right: 4px;
@@ -58,6 +61,6 @@
 	}
 }
 .success{
-	display: flex;
+	display: block;
 	animation: fadeUp 0.75s;
 }

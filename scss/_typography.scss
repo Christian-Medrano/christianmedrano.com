@@ -39,48 +39,52 @@ h1{
 	color: #000;
 	font-family: $font-sans-serif;
 	font-weight: 600;
-	font-size: 5em;
+	font-size:64px;
+	line-height: 1em;
 	text-transform: uppercase;
-	margin-bottom: 0.1em;
 }
 
 h2 {
 	color: #000;
 	font-family: $font-sans-serif;
 	font-weight: 100;
-	font-size: 3em;
+	font-size: 48px;
+	line-height: 1.5em;
 }
 h3 {
 	color: #000;
 	font-family: $font-sans-serif;
 	font-weight: 300;
-	font-size: 1.25em;
-	margin-bottom: 10px;
+	font-size: 24px;
+	line-height: 1.5em;
 }
 h4 {
 	color: #000;
 	font-family: $font-sans-serif;
 	font-weight: 200;
-	font-size: 1em;
+	font-size: 24px;
+	line-height: 1.5em;
 }
 h5 {
 	color: #000;
 	font-family: $font-sans-serif;
 	font-weight: 200;
-	font-size: 2em;
+	font-size: 16px;
+	line-height: 1.5em;
 }
 h6 {
 	color: #000;
 	font-family: $font-sans-serif;
 	font-weight: 200;
 	font-size: 16px;
-	line-height: 1em;
+	line-height: 1.5em;
 }
 p {
 	font-family: $font-sans-serif;
 	font-size: 1em;
-	font-weight: 200;
+	font-weight: 300;
 	color: #000;
+	line-height: 16px;
 	line-height: 1.5em;
 }
 small{

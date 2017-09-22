@@ -7,9 +7,14 @@
 	padding-top: 64px;
 }
 .resume-content{
-	height: 100%;
-	overflow-x: scroll;
+	height: calc(100% - 58px);
+	overflow-y: scroll;
+
 }
 .resume-caption{
 	text-align: right;
+}
+
+.resume h1{
+	font-size: 32px;
 }

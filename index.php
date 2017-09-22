@@ -23,10 +23,13 @@
 	<div id="backround-overlay" class="background-overlay"></div>
 </div>
 
+<!-- contact form notification -->
 <div id="form-alert" class="form-alert">
-	<p id="form-alert-text" class="form-alert-text"></p>
-	<div id="hide-form-alert" class="hide-form-alert">
-		<img src="img/ui/close-button.png" alt="hide notification">
+	<div class="space-content">
+		<p id="form-alert-text" class="form-alert-text"></p>
+		<div id="hide-form-alert" class="hide-form-alert">
+			<img src="img/ui/close-button.png" alt="hide notification">
+		</div>
 	</div>
 </div>
 
@@ -38,6 +41,9 @@
 	<div id="home" class="home panel">
 		<!-- arrow navigation -->
 		<div id="nav-left" class="nav-left">
+			<div class="nav-left-caption nav-caption">
+				<p><small>Résumé</small></p>
+			</div>
 			<div class="nav-arrow">
 				<?php include 'img/ui/nav-arrow-left.php'; ?>
 			</div>
@@ -66,11 +72,11 @@
 				<h2>Elegant Design Solutions by</h2>
 				<h1>Christian Mikhael</h1>
 				<div class="social-media">
-					<a href="http://www.linkedin.com/christianmedrano" target="_blank"><img src="img/ui/linkedin.png" alt="Behance Link" class="sm-icon"></a>
+					<a href="http://www.linkedin.com/in/christianmedrano" target="_blank"><img src="img/ui/linkedin.png" alt="LinkedIn Link" class="sm-icon"></a>
 					<a href="http://www.behance.net/christianmedrano" target="_blank"><img src="img/ui/behance.png" alt="Behance Link" class="sm-icon"></a>
-					<a href="https://github.com/Christian-Medrano" target="_blank"><img src="img/ui/github.png" alt="Behance Link" class="sm-icon"></a>
-					<a href="https://github.com/Christian-Medrano" target="_blank"><img src="img/ui/facebook.png" alt="Behance Link" class="sm-icon"></a>
-					<a href="https://github.com/Christian-Medrano" target="_blank"><img src="img/ui/instagram.png" alt="Behance Link" class="sm-icon"></a>
+					<a href="https://github.com/Christian-Medrano" target="_blank"><img src="img/ui/github.png" alt="Github Link" class="sm-icon"></a>
+					<a href="https://www.facebook.com/christian.m.medrano.5" target="_blank"><img src="img/ui/facebook.png" alt="Facebook Link" class="sm-icon"></a>
+					<a href="https://www.instagram.com/christian.mikhael/" target="_blank"><img src="img/ui/instagram.png" alt="Instagram Link" class="sm-icon"></a>
 				</div>
 			</div>
 			<!-- welcome intro -->

@@ -62,23 +62,28 @@
 	text-align: center;
 	opacity: 0;
 }
-
+.nav-left-caption{
+	transform: rotate(-90deg);
+	right: -16px;
+}
 .nav-right-caption{
 	transform: rotate(90deg);
 	left: -16px;
 }
-.nav-right:hover .nav-right-caption, .nav-bottom:hover .nav-bottom-caption{
-	opacity: 1;
-	transition-duration: 0.3s;
-}
 .nav-bottom-caption{
 	top: 0px;
 }
+.nav-right:hover .nav-right-caption, .nav-bottom:hover .nav-bottom-caption, .nav-left:hover .nav-left-caption{
+	opacity: 1;
+	transition-duration: 0.3s;
+}
 
 
 
 
-.nav-right-return:hover .nav-right-caption, .nav-bottom-return:hover .nav-bottom-caption {
+.nav-right-return:hover .nav-right-caption, 
+.nav-bottom-return:hover .nav-bottom-caption,
+.nav-left-return:hover .nav-left-caption {
 	opacity: 0;
 }
 
