@@ -1,7 +1,12 @@
 <?php require_once 'header.php'; ?>
-
-<div id="welcome" class="welcome">
-	<div id="welcome-message" class="welcome-message center"></div>
+<div id="loading-screen" class="loading-screen">
+	<div id="loading-content" class="loading-content center">
+		<div id="welcome-message" class="welcome-message text-center"></div>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
 </div>
 
 <div id="menu" class="menu">
@@ -69,8 +74,8 @@
 
 		<div id="blurb" class="blurb center text-center">
 			<div id="blurb-content" class="blurb-content">
-				<h2>Elegant Design Solutions by</h2>
-				<h1>Christian Mikhael</h1>
+				<h2>Experiences Designed by</h2>
+				<h1>Christian Medrano</h1>
 				<div class="social-media">
 					<a href="http://www.linkedin.com/in/christianmedrano" target="_blank"><img src="img/ui/linkedin.png" alt="LinkedIn Link" class="sm-icon"></a>
 					<a href="http://www.behance.net/christianmedrano" target="_blank"><img src="img/ui/behance.png" alt="Behance Link" class="sm-icon"></a>

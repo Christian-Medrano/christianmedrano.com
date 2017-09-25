@@ -7,6 +7,16 @@
 	}
 }
 
+@keyframes fadeOut{
+	0%{
+		opacity:  1;
+	}
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
 @keyframes fadeUp{
 	0%{
 		opacity:  0;
@@ -19,4 +29,16 @@
 }
 .fadeUp{
 	animation: fadeUp 1s 1s forwards;
+}
+
+@keyframes slideRight {
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(0%);
+	}
+}
+.slideRight{
+	animation: slideRight 1s 1s forwards;
 }

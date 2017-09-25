@@ -1,19 +1,100 @@
-.welcome{
-	z-index: 101;
+.loading-screen{
 	position: fixed;
+	z-index: 1001;
 	top: 0;
-	right: 0;
-	bottom: 0;
 	left: 0;
-	display: flex;
-	background-color: #fff;
-	animation: fadeOut 1s 2s forward;
+	height: 100vh;
+	width: 100vw;
+	background-color: #FFF;
+	animation: fadeOut 1s 4s forwards;
 }
+
+.loading-content{
+	padding: 19px;
+	overflow: hidden;
+	width: 300px;
+}
+
 .welcome-message{
 	color: #000;
 	font-family: $font-serif;
 	font-style: italic;
-	font-size: 2em;
-	opacity: 0;
-	text-align: center;
+	font-size: 24px;
+	opacity: 1;
 }
+
+.loading-content span{
+	position: absolute;
+	background-color: #000;
+}
+
+@keyframes slideRight{
+	0%{
+		transform: translateX(-100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+@keyframes slideDown{
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+@keyframes slideLeft{
+	0%{
+		transform: translateX(100%);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+@keyframes slideUp{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+.loading-content span:nth-child(2){
+	height: 3px;
+	width: 100%;
+	left: 0;
+	top: 0;
+	transform: translateX(-100%);
+	animation: slideRight 1s forwards;
+}
+.loading-content span:nth-child(3){
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 3px;
+	transform: translateY(-100%);
+	animation: slideDown 1s 1s forwards;
+}
+
+.loading-content span:nth-child(4){
+	height: 3px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	transform: translateX(100%);
+	animation: slideLeft 1s 2s forwards;
+}
+.loading-content span:nth-child(5){
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 3px;
+	transform: translateY(100%);
+	animation: slideUp 1s 3s forwards;
+}
+
+
+
+

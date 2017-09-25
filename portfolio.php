@@ -19,7 +19,7 @@
 				$projectLikes = $project->stats->appreciations;
 				$projectComments = $project->stats->comments;
 
-				echo '<div class="project col col-3 col-tb-4 col-mb-12 px-1">';
+				echo '<div class="col col-3 col-tb-4 col-mb-12 px-1 project">';
 				// Project Cap
 				echo '<a href="'.$projectUrl.'" target="blank">';
 				echo '<div class="project-cap">';

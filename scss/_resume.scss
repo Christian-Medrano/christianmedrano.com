@@ -7,8 +7,10 @@
 	padding-top: 64px;
 }
 .resume-content{
-	height: calc(100% - 58px);
+	height: calc(100% - 90px);
+	overflow-x: hidden;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 
 }
 .resume-caption{
@@ -17,4 +19,8 @@
 
 .resume h1{
 	font-size: 32px;
+}
+
+.resume p{
+	font-weight: 200;
 }

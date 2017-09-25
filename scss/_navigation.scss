@@ -5,6 +5,9 @@
 	width: unset;
 	height: 24px;
 }
+.st0{
+	stroke-width: 2px;
+}
 
 .nav-left, .nav-right{
 	cursor: pointer;
@@ -19,7 +22,11 @@
 }
 .nav-right{
 	right: 0;
+	cursor: e-resize;
 }
+
+
+
 .nav-right:hover{
 	padding-right: 0;
 	padding-left: 32px;
@@ -27,13 +34,14 @@
 }
 .nav-left{
 	left: 0;
+	cursor: w-resize;
 }
 .nav-left:hover{
 	padding-left: 0;
 	padding-right: 32px;
 }
 .nav-bottom{
-	cursor: pointer;
+	cursor: s-resize;
 	height: 24px;
 	width: 100vw;
 	position: absolute;
@@ -93,6 +101,7 @@
 
 .nav-left-return{
 	transform: translateX(-100%);
+	cursor: e-resize;
 }
 .nav-left-return:hover{
 	padding-right: 0;
@@ -104,6 +113,7 @@
 
 .nav-right-return{
 	transform: translateX(100%);
+	cursor: w-resize;
 }
 .nav-right-return:hover{
 	padding-left: 0;
@@ -115,6 +125,7 @@
 
 .nav-bottom-return{
 	transform: translateY(100%);
+	cursor: n-resize;
 }
 .nav-bottom-return:hover{
 	padding-top: 0;
@@ -135,8 +146,8 @@
 .menu{
 	z-index: 102;
 	position: fixed;
+	left: 16px;
 	top: 16px;
-	right: 16px;
 }
 
 .menu-icon{
@@ -179,7 +190,7 @@
 .menu-links{
 	position: absolute;
 	top: 48px;
-	right: 0;
+	left: 0;
 	background-color: #000;
 	padding: 16px;
 	display: none;

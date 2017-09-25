@@ -1,5 +1,6 @@
 input, textarea{
 	border:none;
+	border-radius: 0;
 	outline: none;
 	background: transparent;
 }
@@ -26,7 +27,6 @@ input, textarea{
 	font-weight: 300;
 	transition-duration: 0.5s;
 	width: calc(100% - 16px);
-	background-color: rgba(0, 0, 0, 0.07);
 }
 
 input:focus, textarea:focus{
@@ -53,6 +53,7 @@ label{
 	font-size: 16px;
 	position: absolute;
 	top: 0;
+	left: 0;
 	margin-top: 4px;
 }
 

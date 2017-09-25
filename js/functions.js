@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	
+
 	// set date for welcome message
 	var d = new Date();
 	var n = d.getHours();
@@ -14,9 +16,6 @@ $(document).ready(function(){
 		$('#welcome-message').text('Hello');
 	}
 
-	// animate welcome
-	$('#welcome-message').addClass('fadeUp');
-	$('#welcome').delay(3000).fadeOut(1000);
 
 	// navigation
 	$('#nav-left').click(function(){

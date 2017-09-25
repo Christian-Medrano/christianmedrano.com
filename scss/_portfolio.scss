@@ -14,12 +14,14 @@
 	max-width: calc(100% - 8px);
 	overflow-y: scroll;
 	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 }
 .project{
 	// background-color: rgba(0, 0, 0, 0.5);
+	margin-bottom: 32px;
 }
 .project img{
 	width: 100%;

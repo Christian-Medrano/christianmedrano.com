@@ -2,7 +2,7 @@
 
 	<div class="resume-download">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 py-2">
 				<a href="secure.php" target="_blank">
 					<button>
 						Download my full résumé
