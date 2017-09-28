@@ -69,15 +69,29 @@ button {
 	min-width: 100px;
 	text-transform: uppercase;
 	transition-duration: 0.3s;
+	position: relative;
+}
+button span{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: #000;
+	transition-duration: 0.3s;
 }
 button:hover{
-	background-color: #000;
 	color: #fff;
+	transition-duration: 0.3s;
+}
+button:hover span {
+	width: 100%;
 	transition-duration: 0.3s;
 }
 button:active{
 	color: #777;
-	transition-duration: 0s;
+	transition-duration: 0.3s;
 }
 
 .btn-light{

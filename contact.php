@@ -23,7 +23,7 @@
 				<br>
 
 				<div class="field">
-					<textarea name="message" id="message" rows="5" cols="30" minlength="25" class="input" required></textarea>
+					<textarea name="message" id="message" rows="5" cols="30" minlength="25" class="input" title="Message should contain at least 30 characters." required></textarea>
 					<label for="message">Message</label>
 					<p class="text-right"><small>30 character minimum</small></p>
 				</div>
@@ -35,7 +35,7 @@
 				<!-- <div class="g-recaptcha" data-sitekey="6LckGC4UAAAAAPCvtzJ7KXUVRUCVvzAgM_etvkst" data-theme="dark"></div> -->
 				
 				<div class="field">
-					<button id="submit" type="submit" value="Submit">Submit</button>
+					<button id="submit" type="submit" value="Submit"><span></span>Submit</button>
 				</div>
 			</form>
 		</div>

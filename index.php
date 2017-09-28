@@ -1,13 +1,8 @@
-<?php require_once 'header.php'; ?>
-<div id="loading-screen" class="loading-screen">
-	<div id="loading-content" class="loading-content center">
-		<div id="welcome-message" class="welcome-message text-center"></div>
-		<span></span>
-		<span></span>
-		<span></span>
-		<span></span>
-	</div>
-</div>
+<?php 
+require_once 'header.php'; 
+require_once 'loading.php'
+?>
+
 
 <div id="menu" class="menu">
 	<div id="menu-icon" class="menu-icon">
@@ -24,7 +19,7 @@
 </div>
 
 <div id="background" class="background">
-	<img src="img/bg.jpg" alt="">
+	<img src="img/bg2.jpg" alt="">
 	<div id="backround-overlay" class="background-overlay"></div>
 </div>
 
@@ -93,14 +88,14 @@
 		<?php include 'resume.php'; ?>
 	</div>
 
-	<!-- portfolio -->
-	<div id="portfolio" class="portfolio panel">
-		<?php include 'portfolio.php'; ?>		
-	</div>
-
 	<!-- contact -->
 	<div id="contact" class="contact panel">
 		<?php include 'contact.php'; ?>
+	</div>
+
+	<!-- portfolio -->
+	<div id="portfolio" class="portfolio panel">
+		<?php include 'portfolio.php'; ?>		
 	</div>
 
 </div>

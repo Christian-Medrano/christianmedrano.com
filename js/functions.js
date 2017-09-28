@@ -1,21 +1,9 @@
 $(document).ready(function(){
 
-	
-
-	// set date for welcome message
-	var d = new Date();
-	var n = d.getHours();
-
-	if (n < 12){
-		$('#welcome-message').text('Good Morning');
-	} else if (n >= 12 && n < 18) {
-		$('#welcome-message').text('Good Afternoon');
-	} else if (n >= 18) {
-		$('#welcome-message').text('Good Evening');
-	} else {
-		$('#welcome-message').text('Hello');
-	}
-
+	// Footer Toggle
+	$('#pull-tab').click(function(){
+		$('#footer').toggleClass('footer-visible');
+	});
 
 	// navigation
 	$('#nav-left').click(function(){
@@ -144,5 +132,7 @@ $(document).ready(function(){
 			});
 	    });
 	});
+
+
 	
 });

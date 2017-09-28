@@ -11,7 +11,12 @@
 	overflow-x: hidden;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
-
+}
+.resume-content .row:nth-child(2){
+	padding-bottom: 256px;
+}
+.resume-content .row{
+	padding-left: 0;
 }
 .resume-caption{
 	text-align: right;
@@ -23,4 +28,13 @@
 
 .resume p{
 	font-weight: 200;
+}
+
+@media only screen and (max-width: 768px){
+	.resume .window{
+		height: calc(100% - 80px);
+		width: calc(100% - 32px);
+		padding: 16px;
+		padding-top: 64px;
+	}
 }

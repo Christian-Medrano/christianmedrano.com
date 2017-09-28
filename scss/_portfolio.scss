@@ -90,12 +90,12 @@
 	font-size: 14px;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 768px){
 	.portfolio .window{
 		position: relative;
-		height: calc(100% - 96px);
-		width: calc(100% - 64px);
-		padding: 32px;
+		height: calc(100% - 80px);
+		width: calc(100% - 32px);
+		padding: 16px;
 		padding-top: 64px;
 	}
 }

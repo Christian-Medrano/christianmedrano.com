@@ -3,7 +3,7 @@ include 'header.php';
 
 $pass = $_POST['pass'];
 
-if($pass == '2017')
+if($pass == 'animalstyle')
 {
         echo '<script type="text/javascript">location.href = \'docs/ChristianMedrano-Resume-Aug2107.pdf\';</script>';
 }
@@ -13,7 +13,7 @@ else
     {?>
 		
 		<div id="background" class="background">
-			<img src="img/bg.jpg" alt="">
+			<img src="img/bg2.jpg" alt="">
 			<div id="backround-overlay" class="background-overlay"></div>
 		</div>
 		
@@ -29,7 +29,7 @@ else
 				</div>	
 
 	            <div class="field py-2">
-					<button id="submit" type="submit" value="Submit">Submit</button>
+					<button id="submit" type="submit" value="Submit"><span></span>Submit</button>
 				</div>
             </form>
 
