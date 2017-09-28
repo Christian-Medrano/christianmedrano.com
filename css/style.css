@@ -383,7 +383,7 @@ body {
     width: 16.66666%; } }
 
 footer {
-  z-index: 1001;
+  z-index: 1000;
   position: fixed;
   bottom: 0;
   transform: translateY(calc(100% - 36px));
